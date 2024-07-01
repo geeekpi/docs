@@ -1,6 +1,5 @@
-# 52Pi Docs Server 
-For full documentation visit [wiki.52pi.com](https://wiki.52pi.com) 
-
+# **52Pi Docs**  
+For Product purchasing please visit [www.52pi.com](https://www.52pi.com) 
 
 ## Commands
 
