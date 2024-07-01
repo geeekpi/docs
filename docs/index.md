@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# 52Pi Docs Server 
+For full documentation visit [wiki.52pi.com](https://wiki.52pi.com) 
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
 
@@ -15,3 +15,34 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+
+
+## **Test**
+
+### **1. Sensors** 
+* test
+* * test
+  * * test
+    * * test
+      * * test
+        * * test
+          * * test 
+### **2. Components**
+* test
+* * test
+  * * test
+    * * test
+      * * test
+        * * test
+          * * test
+            * 
+### **3. Demo codes** 
+
+* test
+* * test
+  * * test
+    * * test
+      * * test
+        * * test
+          * 
