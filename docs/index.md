@@ -1,7 +1,11 @@
 # **52Pi Docs**  
+
 For Product purchasing please visit [www.52pi.com](https://www.52pi.com) 
 
 ## **About 52Pi**
+
+![52pi-logo](./assets/logo.png)
+
 52Pi is a company that specializes in the development, production,
 and sales of high-quality open-source hardware products, 
 particularly focused on the Raspberry Pi ecosystem. 
