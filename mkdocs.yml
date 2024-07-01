@@ -2,22 +2,86 @@ site_name: 52Pi Docs
 nav:
   - HOME: index.md
   - Conponents Introduction: 'md/conponent.md'
-  - Projects for Arduino: 'md/arduino.md'
-  - Projects for Raspbery Pi Pico Series: 'md/pico.md'
-  - Projects for ESP32: 'md/esp32.md'
-  - Projects for Raspberry Pi: 'md/rpi.md'
-  - Contact: 'md/contact.md'
+  - Projects for Arduino: 
+      - Project 1: 'md/arduino/p1.md'
+      - Project 2: 'md/arduino/p2.md'
+      - Project 3: 'md/arduino/p3.md'
+      - Project 4: 'md/arduino/p4.md'
+      - Project 5: 'md/arduino/p5.md'
+      - Project 6: 'md/arduino/p6.md'
+      - Project 7: 'md/arduino/p7.md'
+      - Project 8: 'md/arduino/p8.md'
+      - Project 9: 'md/arduino/p9.md'
+      - Project 10: 'md/arduino/p10.md'
+      - Project 11: 'md/arduino/p11.md'
+      - Project 12: 'md/arduino/p12.md'
+      - Project 13: 'md/arduino/p13.md'
+      - Project 14: 'md/arduino/p14.md'
+      - Project 15: 'md/arduino/p15.md'
+  - Projects for Raspbery Pi Pico Series: 
+      - Project 1: 'md/pico/p1.md'
+      - Project 2: 'md/pico/p2.md'
+      - Project 3: 'md/pico/p3.md'
+      - Project 4: 'md/pico/p4.md'
+      - Project 5: 'md/pico/p5.md'
+      - Project 6: 'md/pico/p6.md'
+      - Project 7: 'md/pico/p7.md'
+      - Project 8: 'md/pico/p8.md'
+      - Project 9: 'md/pico/p9.md'
+      - Project 10: 'md/pico/p10.md'
+      - Project 11: 'md/pico/p11.md'
+      - Project 12: 'md/pico/p12.md'
+      - Project 13: 'md/pico/p13.md'
+      - Project 14: 'md/pico/p14.md'
+      - Project 15: 'md/pico/p15.md'
+  - Projects for ESP32: 
+      - Project 1: 'md/esp32/p1.md'
+      - Project 2: 'md/esp32/p2.md'
+      - Project 3: 'md/esp32/p3.md'
+      - Project 4: 'md/esp32/p4.md'
+      - Project 5: 'md/esp32/p5.md'
+      - Project 6: 'md/esp32/p6.md'
+      - Project 7: 'md/esp32/p7.md'
+      - Project 8: 'md/esp32/p8.md'
+      - Project 9: 'md/esp32/p9.md'
+      - Project 10: 'md/esp32/p10.md'
+      - Project 11: 'md/esp32/p11.md'
+      - Project 12: 'md/esp32/p12.md'
+      - Project 13: 'md/esp32/p13.md'
+      - Project 14: 'md/esp32/p14.md'
+      - Project 15: 'md/esp32/p15.md'
+  - Projects for Raspberry Pi:
+      - Project 1: 'md/raspberrypi/p1.md'
+      - Project 2: 'md/raspberrypi/p2.md'
+      - Project 3: 'md/raspberrypi/p3.md'
+      - Project 4: 'md/raspberrypi/p4.md'
+      - Project 5: 'md/raspberrypi/p5.md'
+      - Project 6: 'md/raspberrypi/p6.md'
+      - Project 7: 'md/raspberrypi/p7.md'
+      - Project 8: 'md/raspberrypi/p8.md'
+      - Project 9: 'md/raspberrypi/p9.md'
+      - Project 10: 'md/raspberrypi/p10.md'
+      - Project 11: 'md/raspberrypi/p11.md'
+      - Project 12: 'md/raspberrypi/p12.md'
+      - Project 13: 'md/raspberrypi/p13.md'
+      - Project 14: 'md/raspberrypi/p14.md'
+      - Project 15: 'md/raspberrypi/p15.md'
+
+  - Contact: 
+     - E-Mail: 'md/contact.md'
+
+theme: readthedocs
 
 markdown_extensions:
-   - pymdownx.hightlight:
-       anchor_linenums: true
-       line_spans: __span
-       pygments_lang_class: true
-   - pymdownx.inlinehilite
-   - pymdownx.snippets
-   - pymdownx.superfences
-   - attr_list
-   - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
 
 plugins:
   - glightbox:
@@ -29,8 +93,3 @@ plugins:
       height: auto
       zoomable: true
       draggable: true
-      skip_classes:
-        - custom-skip-class-name
-      auto_caption: false
-      caption_position: bottom
-  
