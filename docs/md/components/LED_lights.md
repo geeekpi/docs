@@ -39,7 +39,4 @@ A Light Emitting Diode (LED) is a semiconductor light source that emits light wh
 ## Examples 
 
 * [Proejct 1 Blinking LED](../arduino/p1.md) (on Arduino) 
-* [Project 1 Blinking LED](../pico/p1.md) (on Raspberry Pi Pico) 
-* [Project 1 Blinking LED](../esp32/p1.md) (on ESP32) 
-* [Project 1 Blinking LED](../raspberrypi/p1.md) (on Raspberry Pi) 
 
