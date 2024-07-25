@@ -4,6 +4,10 @@
 
 * ** Name of the Kit ** : `Education Starter Kit for Arduino uno R4 wifi`
 
+## Package Includes
+
+![kit_outlook](../imgs/KZ-0073-04.jpg)
+
 
 The kit contains an Arduino UNO R4 WiFi board and various electronic components suitable for beginners.
 
