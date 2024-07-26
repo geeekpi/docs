@@ -19,6 +19,8 @@ Features a 32-bit microcontroller RA4M1 and an ESP32 module for Wi-Fi and Blueto
 
 ### Components
 
+- ** [Arduino UNO R4 WiFi](../md/components/arduino_uno_r4_wifi.md) **: The Arduino UNO R4 WiFi is powerfull development board.
+
 - ** [9g Servo](../md/components/9g_Servos.md) **: A device for converting electrical signals into precise mechanical motion.
 
 - ** [52Pi Experiment Platform](../md/components/52Pi_Experiment_Trays.md) **: A platform for conducting experiments.
