@@ -1,6 +1,6 @@
 site_name: 52Pi Docs 
 nav:
-  - HOME: 'md/index.md'
+  - HOME: 'index.md'
   - Components Introduction: 'md/component.md'
   - Education Starter Kit KZ-0073: 
     - What's in the kit: 'md/whatinkit.md'
