@@ -1,7 +1,20 @@
 site_name: 52Pi Docs 
 nav:
   - HOME: 'index.md'
-  - Components Introduction: 'md/component.md'
+  - Universal Sensor Assortment Kit KZ-0068: 
+    - What's in the kit: 'md/component.md'
+    - Preparation: 'md/preparation.md'
+    - Getting Start : 'md/gettingsa.md'
+    - Project 1: 'md/kz-0068/arduino/p1.md'
+    - Project 2: 'md/kz-0068/arduino/p2.md'
+    - Project 3: 'md/kz-0068/arduino/p3.md'
+    - Project 4: 'md/kz-0068/arduino/p4.md'
+    - Project 5: 'md/kz-0068/arduino/p5.md'
+    - Project 6: 'md/kz-0068/arduino/p6.md'
+    - Project 7: 'md/kz-0068/arduino/p7.md'
+    - Project 8: 'md/kz-0068/arduino/p8.md'
+    - Project 9: 'md/kz-0068/arduino/p9.md'
+    - Project 10: 'md/kz-0068/arduino/p10.md'
   - Education Starter Kit KZ-0073: 
     - What's in the kit: 'md/whatinkit.md'
     - Preparation: 'md/preparation.md'
