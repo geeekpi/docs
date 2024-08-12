@@ -11,3 +11,21 @@ Use actual documentation generated within about 1 minutes on each commit:
 * English: https://docs.52pi.com
 
 The above URLs are all for the master branch latest version.
+
+## Extensions dependencies 
+
+```bash 
+sudo apt -y install mkdocs
+```
+
+* Python extensions
+
+```python
+sudo pip3 install pymdown-extensions --break-system-packages
+sudo pip3 install mkdocs-video --break-system-packages
+```
+
+## Run Debug mode 
+```bash
+sudo mkdocs serve -a 0.0.0.0:80 
+```
