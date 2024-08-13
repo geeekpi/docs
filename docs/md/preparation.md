@@ -38,6 +38,7 @@ Here are the technical specifications for the Arduino® UNO R4 Wi-Fi.
 2](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing/)
 
 * Windows 
+
 To install the Arduino IDE 2 on a Windows computer, simply run the file downloaded from the software page
 
 ![windows](../imgs/unoR4/downloading-and-installing-img01.png)
@@ -45,7 +46,8 @@ To install the Arduino IDE 2 on a Windows computer, simply run the file download
 Follow the instructions in the installation guide. The installation may take several minutes.
 
 ![install](../imgs/unoR4/downloading-and-installing-img02.png)
- You can now use the Arduino IDE 2 on your Windows computer!   
+
+You can now use the Arduino IDE 2 on your Windows computer!   
 
 * MacOS
 
@@ -65,6 +67,7 @@ Before we can launch the editor, we need to first make it an executable file. Th
 3. `select Permissions tab`,
 4. `tick the Allow executing file as program box`.
 ![linux](../imgs/unoR4/linux-installation.gif)
+
 You can now double click the file to launch the Arduino IDE 2 on your Linux machine. In case you cannot run the AppImage file, make sure that FUSE is installed on your system.
 
 In Ubuntu (>= 22.04):
@@ -87,21 +90,21 @@ To enable the Arduino IDE to access the serial port and upload code to your boar
 ```bash
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", GROUP="plugdev", MODE="0666"
 ```
-## ** How to upload a sketch with the Arduino IDE 2** 
+## **How to upload a sketch with the Arduino IDE 2** 
 In the Arduino environment, we write sketches that can be uploaded to Arduino boards. In this tutorial, we will go through how to select a board connected to your computer, and how to upload a sketch to that board, using the Arduino IDE 2.
 You can easily download the editor from the Arduino Software page.
 You can also follow the downloading and installing the Arduino IDE 2 tutorial for more detailed guide on how to install the editor.
 
-### ** Requirements **
+### **Requirements**
 * Arduino IDE 2 installed.  
 
-### ** Verify VS Upload ** 
+### **Verify VS Upload** 
 There are two main tools when uploading a sketch to a board: `verify` and `upload`. 
 The verify tool simply goes through your sketch, checks for errors and compiles it. The upload tool does the same, but when it finishes compiling the code, it also uploads it to the board.
 
 A good practice is to use the verifying tool before attempting to upload anything. This is a quick way of spotting any errors in your code, so you can fix them before actually uploading the code.
 
-### ** Uploading a Sketch ** 
+### **Uploading a Sketch** 
 Uploading a sketch is quick and easy, but let's take a look at what we need to do.
 
 * Open the Arduino IDE 2. 
@@ -136,7 +139,8 @@ After a few seconds, we can see the result of the action in the console (black b
 
 Congratulations, you have now uploaded a sketch to your Arduino board!
 
-### ** Please Read (Only Linux Users) **
+### **Please Read (Only Linux Users)**
+
 It might happen that when you upload a sketch - after you have selected your board and the serial port - you get an error such as "... Permission denied". 
 If you get this error, you need to set serial port permission.
 
@@ -160,7 +164,9 @@ Now we just need to add our user to the group:
 sudo usermod -a -G dialout <username>
 ```
 
-where <username> is your Linux user name. ** You will need to log out and log in again for this change to take effect ** .
+where <username> is your Linux user name. 
+
+<br>You will need to log out and log in again for this change to take effect.
 
 ![Adding user to the group](../imgs/unoR4/Ubuntu_Serial.jpg).
 

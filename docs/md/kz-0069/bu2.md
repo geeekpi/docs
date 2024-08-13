@@ -11,6 +11,7 @@ In this experiment, we are going to read raw data from soil moisture sensors on 
 ## Hardware Overview
 
 The shield provides the following interfaces:
+
 * 3 x Soil Moisture Sensors (Analog Inputs A0, A1, A2)
 * 3 x NTC Temperature Sensors (Analog Inputs A4, A5, A6)
 * 3 x 3.3V Relay Modules (Digital Outputs 2, 3, 4)
@@ -47,9 +48,9 @@ The shield provides the following interfaces:
 
 ![circuit Diagram](./imgs/plant_watering_kit_board_diagram.png)
 
-## LEDs on board Position Detail 
+## Soil moistrue socket position 
 
-![ledpinout](./imgs/KZ-0069-bu1.jpg)
+![soilmoisture](./imgs/soil_moisture_sockets.jpg)
 
 ## Connecting the Shield
 - place the arduino uno r4 on a flat surface.
@@ -96,8 +97,6 @@ void loop() {
     delay(1000); //wait for a second.
 }
 ```
-### Open Serial monitor 
-* Click 
 
 ### Upload the sketch to Arduino UNO R4 WiFi board.
 
@@ -109,8 +108,11 @@ void loop() {
 ![upload sketch2](./imgs/basic_3_02.png) 
 ![upload sketch3](./imgs/basic_3_03.png) 
 
-### Open serial monitor
+### Open Serial monitor 
 
+* Click this icon on right up cornner to open `serial monitor`.
+
+![openserialmonitor](./imgs/open_serial_monitor.png)
 ![openserialmonitor](./imgs/basic_3_04.png) 
 
 ## Demo Code Sketch Download 

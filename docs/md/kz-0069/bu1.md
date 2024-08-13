@@ -7,8 +7,11 @@ This is the basic experiment for learning the plant watering kit, it will help y
 OK, let’s begin the basic learning. 
 
 In this experiment, we are going to blink the two LEDs on the plant watering hat board. 
-Hardware Overview
+
+## Hardware Overview
+
 The shield provides the following interfaces:
+
 * 3 x Soil Moisture Sensors (Analog Inputs A0, A1, A2)
 * 3 x NTC Temperature Sensors (Analog Inputs A4, A5, A6)
 * 3 x 3.3V Relay Modules (Digital Outputs 2, 3, 4)
@@ -50,6 +53,7 @@ The shield provides the following interfaces:
 ![ledpinout](./imgs/KZ-0069-bu1.jpg)
 
 ## Connecting the Shield
+
 - place the arduino uno r4 on a flat surface.
 - align the shield with the headers of the arduino board and gently press it down until it clicks into place.
 - plug the plant watering hat board on top of arduino uno r4 on gpio pins. 
