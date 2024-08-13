@@ -18,6 +18,10 @@ The shield provides the following interfaces:
 * 3 x Mini Water Pumps
 * 1.3-inch IPS RGB TFT Screen (ST7789 Controller)
 
+## Soil Moisture sensor Details
+
+![soil_moisture](./imgs/moisture_sensor.jpg)
+
 ## Pinout Chart
 
 * Details of the expansion board.

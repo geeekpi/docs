@@ -2,6 +2,8 @@
 
 ## Reading NTC raw data and convert it into temperature. 
 
+Next, we will calculate the current temperature information by converting the readings from the NTC.
+
 ## Hardware Overview
 
 The shield provides the following interfaces:
@@ -15,6 +17,9 @@ The shield provides the following interfaces:
 ## What is NTC temperature sensor?
 
 NTC temperature sensors, which stand for **Negative Temperature Coefficient** thermistors, are a type of thermistor whose resistance decreases as the temperature increases. They are characterized by a negative correlation between resistance value and temperature within their operating range, meaning the resistance decreases with an increase in temperature.
+
+![ntc thermistors](./imgs/ntc_sensor.jpg)
+
 
 ### Working Principle
 

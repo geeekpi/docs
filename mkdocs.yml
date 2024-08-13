@@ -1,7 +1,7 @@
 site_name: 52Pi Docs 
 nav:
   - HOME: 'index.md'
-  - KZ-0069:
+  - KZ-0069 Plant Watering Kit:
     - What's in the kit: 'md/kz-0069/whatisinthekit.md'
     - Getting Start: 'md/kz-0069/gettingstart.md'
     - Basic Usage 1: 'md/kz-0069/bu1.md'
@@ -9,11 +9,12 @@ nav:
     - Basic Usage 3: 'md/kz-0069/bu3.md'
     - Basic Usage 4: 'md/kz-0069/bu4.md'
     - Basic Usage 5: 'md/kz-0069/bu5.md'
+    - Basic Usage 6: 'md/kz-0069/bu6.md'
     - Networking: 'md/kz-0069/networking.md'
     - MQTT broker: 'md/kz-0069/mqtt.md'
     - HomeAssistant: 'md/kz-0069/ha.md'
 
-  - KZ-0068: 
+  - KZ-0068 Universal Sensor Kit: 
     - What's in the kit: 'md/component.md'
     - Preparation: 'md/preparation.md'
     - Getting Start : 'md/gettingsa.md'
@@ -28,7 +29,7 @@ nav:
     - Project 9: 'md/kz-0068/arduino/p9.md'
     - Project 10: 'md/kz-0068/arduino/p10.md'
 
-  - KZ-0073: 
+  - KZ-0073 Education Starter Kit: 
     - What's in the kit: 'md/whatinkit.md'
     - Preparation: 'md/preparation.md'
     - Getting Start : 'md/gettingsa.md'
