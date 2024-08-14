@@ -1723,7 +1723,222 @@ Open arduino IDE and create a new sketch by clicking `file`-> `New Sketch`
 
 ### Create a new tab 
 
-![create_new_tab](./imgs/add_new_tab.png)
-![create_new_tab](./imgs/add_new_tab_2.png)
-![create_new_tab](./imgs/add_new_tab_3.png)
+![create_new_tab1](./imgs/add_new_tab.png)
+![create_new_tab2](./imgs/add_new_tab_2.png)
+![create_new_tab3](./imgs/add_new_tab_3.png)
+![create_new_tab4](./imgs/add_new_tab_3.png)
+![create_new_tab5](./imgs/arduino_secrets_header_file.png)
+adding your wifi access point `ssid` and `password` information. 
+
+> NOTE: Arduino UNO R4 WiFi supports 2.4GHz wifi only. 
+
+![create_new_tab5](./imgs/arduino_secrets_header_file_2.png)
+    
+### Create new sketch 
+
+* Click `file` icon and `new sketch`.
+
+![newsketch](./imgs/new_sketch.png)
+
+### Import Header files
+
+```bash
+#include "WiFiS3.h"
+#include "arduino_secrets.h"
+
+#include <TFT_eSPI.h>     // Hardware-specific library
+#include <TFT_eWidget.h>  // Widget library 
+```
+
+### Define variables 
+
+```bash
+char ssid[] = SECRET_SSID;        // your network SSID (name)
+char pass[] = SECRET_PASS;        // your network password (use for WPA, or use as key for WEP)
+
+#define LED_OFFLINE  7
+#define LED_ONLINE  6
+
+// define soil moisture sensor pin 
+#define humi1  A2 
+
+// define WiFi status 
+int status = WL_IDLE_STATUS
+
+```
+### Initialize TFT display 
+```bash
+// create instance of TFT display
+TFT_eSPI tft = TFT_eSPI();
+```
+
+### Setup function initialization 
+
+```bash
+void setup() {
+    // Initialize LEDs 
+    pinMode(LED_OFFLINE, OUTPUT);
+    pinMode(LED_ONLINE, OUTPUT);
+
+    // Initialize serial port 
+    Serial.begin(9600);
+
+    // init tft display and clear screen
+    tft.begin();
+    tft.setRotation(0);
+    tft.fillScreen(TFT_BLACK);
+    tft.setCursor(0,0);
+    tft.setTextColor(TFT_RED);
+    tft.setTextSize(3);
+    tft.println("Attempting to connect to wifi network!!!");
+    tft.println("Please wait for a while....");
+
+    digitalWrite(LED_OFFLINE, HIGH); // turn on Red led unless wifi is connected.
+
+
+    // attempt to connect to WiFi network:
+    while (status != WL_CONNECTED) {
+        Serial.print("Attempting to connect to WPA SSID: ");
+        Serial.println(ssid);
+
+        // Connect to WPA/WPA2 network:
+        status = WiFi.begin(ssid, pass);
+
+        // wait 10 seconds for connection;
+        delay(10000);
+        digitalWrite(LED_OFFLINE, HIGH);
+    }
+    
+    digitalWrite(LED_OFFLINE, LOW);
+    digitalWrite(LED_ONLINE, HIGH);
+
+}
+```
+### Loop section 
+```bash 
+void loop() {
+    // get IP address 
+    IPAddress ip = WiFi.localIP();
+    //  Serial.print("IP address: ");
+    //  Serial.println(ip);
+
+    //reading soil moisture sensor's raw data. 
+    float humi1_value = analogRead(humi1);
+
+    tft.fillScreen(TFT_BLACK);
+    tft.setCursor(0,0);
+    tft.setTextColor(TFT_GREEN);
+    tft.setTextSize(3);
+    tft.println("IP address: ");
+    tft.println(ip);
+    tft.println("HUMI1 Rawdata:");
+    tft.println(humi1_value);
+    delay(3000);
+}
+```
+
+### Upload sketch and observe the result
+
+* Click `upload arrow` icon to upload sketch and open serial monitor. 
+
+![upload sketch](./imgs/upload_sketch_networking.png) 
+
+* Serial monitor output  
+
+![upload sketch](./imgs/serial_output_networking.png) 
+
+### Full demo code 
+```bash
+#include "WiFiS3.h"
+#include "arduino_secrets.h"
+
+#include <TFT_eSPI.h>   // Hardware-specific library
+#include <TFT_eWidget.h>  //widget library
+
+char ssid[] = SECRET_SSID;  // your network SSDI(name)
+char pass[] = SECRET_PASS;  // your network password (use for WPA, or use as key for WEP)
+
+// define leds
+#define LED_OFFLINE 7
+#define LED_ONLINE 6
+
+// define soil moisture sensor pin
+#define humi1  A2
+
+// define wifi status i
+int status = WL_IDLE_STATUS;
+
+// create instance of TFT　display
+TFT_eSPI tft = TFT_eSPI();
+
+void setup() {
+  // init serial port
+  Serial.begin(9600);
+
+  // init leds
+  pinMode(LED_OFFLINE, OUTPUT);
+  pinMode(LED_ONLINE, OUTPUT);
+
+  // init tft display and clear screen
+  tft.begin();
+  tft.setRotation(0);
+  tft.fillScreen(TFT_BLACK);
+  tft.setCursor(0,0);
+  tft.setTextColor(TFT_RED);
+  tft.setTextSize(3);
+  tft.println("Attempting to connect to wifi network!!!");
+  tft.println("Please wait for a while....");
+
+  digitalWrite(LED_OFFLINE, HIGH); // turn on Red led unless wifi is connected.
+
+  // attempt to connect to WiFi network:
+  while (status != WL_CONNECTED) {
+    Serial.print("Attempting to connect to WPA SSID: ");
+    Serial.println(ssid);
+    // connect to WPA/WPA2 network:
+    status = WiFi.begin(ssid, pass);
+
+    // wait 10 seconds for connection;
+    delay(10000);
+
+  }
+    digitalWrite(LED_OFFLINE, LOW); // turn off red led
+    digitalWrite(LED_ONLINE, HIGH); // turn on green led means that wifi connection is ok.
+}
+
+void loop() {
+
+   IPAddress ip = WiFi.localIP();
+  //  Serial.print("IP address: ");
+  //  Serial.println(ip);
+   //reading soil moisture sensor's raw data.
+   float humi1_value = analogRead(humi1);
+
+   tft.fillScreen(TFT_BLACK);
+   tft.setCursor(0,0);
+   tft.setTextColor(TFT_GREEN);
+   tft.setTextSize(3);
+   tft.println("IP address: ");
+   tft.println(ip);
+   tft.println("HUMI1 Rawdata:");
+   tft.println(humi1_value);
+   delay(3000);
+}
+```
+
+### Demo Video 
+
+![type:video](./imgs/network_TFT_display.mp4)
+
+----
+
+### Demo codo sketch download 
+
+* [Basic_7_Networking_TFT_display](./imgs/Basic_7_Networking_TFT_display.zip)
+
+### Summary 
+
+* So far, you have learned how to connect the Arduino UNO R4 WiFi to the internet and display IP address information and sensor data on the TFT screen. Let's continue to explore and take a look at the chapter on the MQTT protocol. Keep it up!
+
+
 
