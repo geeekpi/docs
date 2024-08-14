@@ -334,6 +334,6 @@ void loop() {
 
 ## Demo Video 
 
-![type:video](./imgs/mqtt_broker_With_HA.MP4)
+![type:video](./imgs/ha_reading_mqtt_server.mp4)
 
 ----
