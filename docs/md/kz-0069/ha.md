@@ -11,3 +11,4 @@ Home Assistant consists of a core component and multiple components. The core co
 For the requirement of sending soil moisture (A2) information from the plant watering kit to the MQTT broker through MQTT and displaying it on the Home Assistant page, users need to configure the MQTT component and create corresponding automation rules to achieve data collection and display. For specific configuration methods, you can refer to the official documentation of Home Assistant and tutorials provided by the community.
 
 ## 
+

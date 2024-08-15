@@ -28,7 +28,7 @@ Welcome to the Arduino UNO R4 WiFi Shield Kit! This kit is designed to provide a
 
 ## Package Includes
 
-![Package Includes](./imgs/970x600-packagelist.jpg)
+![Package Includes](./imgs/KZ-0069-package_list3.jpg)
 
 ## Dimension 
 
