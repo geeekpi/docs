@@ -32,23 +32,11 @@ Welcome to the Arduino UNO R4 WiFi Shield Kit! This kit is designed to provide a
 
 ## Dimension 
 
-![Dimension](./imgs/970x600-5.jpg)
+![Dimension](./imgs/970x600-5-new.jpg)
 
-## Features
-
-![Features1](./imgs/970x600-2.jpg)
-![Features2](./imgs/970x600-6.jpg)
-
-## How to assmeble it?
-
-* Please assemble it according following steps:
-
-![assemble1](./imgs/970x600-3.jpg)
-
-![assemble2](./imgs/970x600-4.jpg)
-
-## After Assembling
+## Tech Support 
 * If you have any question on how to assmeble it, please kindly send email to
 us by click here: [Tech Support](mailto:tech@52pi.net) 
 * or send E-mail to : tech@52pi.net
+
 ----
