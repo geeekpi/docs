@@ -351,7 +351,7 @@ void loop() {
 ```
 ## Demo video 
 
-![type:video](https://youtu.be/bTnrgQaHG1U)
+![type:video](https://www.youtube.com/embed/bTnrgQaHG1U?si=KbKjH6XXQzVKo1oy)
 
 ----
 
