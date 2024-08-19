@@ -73,7 +73,7 @@ sudo docker run -d --name=homeassistant -v /opt/homeassistant:/config --net=host
 sudo vim.tiny /opt/homeassistant/configuration.yaml 
 ```
 * Examples: 
-```bash 
+```yaml
 # Loads default set of integrations. Do not remove.
 default_config:
 
@@ -152,7 +152,7 @@ sudo mkdir -pv /opt/mosquitto/log
 sudo vim.tiny /opt/mosquitto/config/mosquitto.conf 
 ```
 Copy and paste following lines 
-```bash 
+```text
 listener 1883 0.0.0.0
 persistence true
 persistence_location /mosquitto/data/
@@ -240,7 +240,7 @@ Please add card according to following figures
 Next, you can use your Arduino UNO R4 WiFi kit to connect to the internet and send corresponding data to the MQTT broker server's topic via the network, allowing it to be displayed on the Home Assistant (HA) dashboard. Of course, for the HA part, you still need to add a card to display the data collected by your Arduino. I have specifically recorded a demo video for this, and those who are interested can watch it on our official YouTube channel. Please feel free to follow, like, subscribe, and share!"
 
 ## Demo code on Arduino Side 
-```bash 
+```cpp 
 #include <ArduinoMqttClient.h>
 #include <WiFiS3.h>
 #include <string.h>
@@ -354,5 +354,4 @@ void loop() {
 ![type:video](https://www.youtube.com/embed/bTnrgQaHG1U?si=KbKjH6XXQzVKo1oy)
 
 ----
-
 
