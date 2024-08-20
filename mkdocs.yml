@@ -2,17 +2,17 @@ site_name: 52Pi Docs
 nav:
   - HOME: 'index.md'
   - KZ-0069 Plant Watering Kit:
-    - What's in the kit: 'md/kz-0069/whatisinthekit.md'
-    - Getting Start: 'md/kz-0069/gettingstart.md'
-    - Basic Usage 1: 'md/kz-0069/bu1.md'
-    - Basic Usage 2: 'md/kz-0069/bu2.md'
-    - Basic Usage 3: 'md/kz-0069/bu3.md'
-    - Basic Usage 4: 'md/kz-0069/bu4.md'
-    - Basic Usage 5: 'md/kz-0069/bu5.md'
-    - Basic Usage 6: 'md/kz-0069/bu6.md'
-    - Networking: 'md/kz-0069/networking.md'
-    - MQTT broker: 'md/kz-0069/mqtt.md'
-    - HomeAssistant: 'md/kz-0069/ha.md'
+    - What's in the kit: 'md/kz-0069/package_includes.md'
+    - Getting Start: 'md/kz-0069/getting_start.md'
+    - Basic Usage 1: 'md/kz-0069/basic_usage_1.md'
+    - Basic Usage 2: 'md/kz-0069/basic_usage_2.md'
+    - Basic Usage 3: 'md/kz-0069/basic_usage_3.md'
+    - Basic Usage 4: 'md/kz-0069/basic_usage_4.md'
+    - Basic Usage 5: 'md/kz-0069/basic_usage_5.md'
+    - Basic Usage 6: 'md/kz-0069/basic_usage_6.md'
+    - Networking: 'md/kz-0069/network_configuration.md'
+    - MQTT broker: 'md/kz-0069/mosquitto_mqtt_broker.md'
+    - HomeAssistant: 'md/kz-0069/home_assistant.md'
 
   - KZ-0068 Universal Sensor Kit: 
     - What's in the kit: 'md/component.md'
