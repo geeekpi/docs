@@ -10,7 +10,7 @@ Examples listed in this section have been tested and verified to work. Most exam
 
 You will need to create this file, or remove the #include "arduino_secrets.h" file at the top of each example. The file should contain:
 
-```bash
+```cpp
 //arduino_secrets.h header file
 #define SECRET_SSID "yournetwork"
 #define SECRET_PASS "yourpassword"
@@ -19,7 +19,7 @@ You will need to create this file, or remove the #include "arduino_secrets.h" fi
 
 ### Access Point 
 
-```bash 
+```cpp 
 /*
   WiFi Web Server LED Blink
 
@@ -190,7 +190,7 @@ void printWiFiStatus() {
 
 ```
 ### Connect With WPA 
-```bash
+```cpp
 /*
   This example connects to an unencrypted WiFi network.
   Then it prints the MAC address of the WiFi module,
@@ -307,7 +307,7 @@ void printMacAddress(byte mac[]) {
 ```
 
 ### Scan Networks
-```bash
+```cpp
 /*
   This example  prints the board's MAC address, and
   scans for available WiFi networks using the NINA module.
@@ -431,7 +431,7 @@ void printMacAddress(byte mac[]) {
 }
 ```
 ### Scan Networks (Advanced) 
-```bash
+```cpp
 /*
   This example  prints the board's MAC address, and
   scans for available WiFi networks using the NINA module.
@@ -577,7 +577,7 @@ void printMacAddress(byte mac[]) {
 }
 ```
 ### Simple Webserver 
-```bash
+```cpp
 /*
   WiFi Web Server LED Blink
 
@@ -720,7 +720,7 @@ void printWifiStatus() {
 }
 ```
 ### Wi-Fi® Chat Server
-```bash
+```cpp
 /*
   Chat  Server
 
@@ -843,7 +843,7 @@ void printWifiStatus() {
 }
 ```
 ### Wi-Fi® UDP NTP Client
-```bash
+```cpp
 /*
   Udp NTP Client
 
@@ -1022,7 +1022,7 @@ void printWifiStatus() {
 }
 ```
 ### Wi-Fi® UDP Send Receive String
-```bash
+```cpp
 /*
   WiFi UDP Send and Receive String
 
@@ -1137,7 +1137,7 @@ void printWifiStatus() {
 }
 ```
 ### Wi-Fi® Web Client
-```bash
+```cpp
 /*
   Web client
 
@@ -1282,7 +1282,7 @@ void printWifiStatus() {
 }
 ```
 ### Wi-Fi® Web Client Repeating
-```bash
+```cpp
 /*
   Repeating WiFi Web Client
 
@@ -1438,7 +1438,7 @@ void printWifiStatus() {
 }
 ```
 ### Wi-Fi® Web Client SSL 
-```bash
+```cpp
 /*
   TLS WiFi Web client
 
@@ -1571,7 +1571,7 @@ void printWifiStatus() {
 }
 ```
 ### Wi-Fi® Web Server
-```bash
+```cpp
 /*
   WiFi Web Server
 
@@ -1742,7 +1742,7 @@ adding your wifi access point `ssid` and `password` information.
 
 ### Import Header files
 
-```bash
+```cpp
 #include "WiFiS3.h"
 #include "arduino_secrets.h"
 
@@ -1752,7 +1752,7 @@ adding your wifi access point `ssid` and `password` information.
 
 ### Define variables 
 
-```bash
+```cpp
 char ssid[] = SECRET_SSID;        // your network SSID (name)
 char pass[] = SECRET_PASS;        // your network password (use for WPA, or use as key for WEP)
 
@@ -1767,14 +1767,14 @@ int status = WL_IDLE_STATUS
 
 ```
 ### Initialize TFT display 
-```bash
+```cpp
 // create instance of TFT display
 TFT_eSPI tft = TFT_eSPI();
 ```
 
 ### Setup function initialization 
 
-```bash
+```cpp
 void setup() {
     // Initialize LEDs 
     pinMode(LED_OFFLINE, OUTPUT);
@@ -1815,7 +1815,7 @@ void setup() {
 }
 ```
 ### Loop section 
-```bash 
+```cpp 
 void loop() {
     // get IP address 
     IPAddress ip = WiFi.localIP();
@@ -1848,7 +1848,7 @@ void loop() {
 ![upload sketch](./imgs/serial_output_networking.png) 
 
 ### Full demo code 
-```bash
+```cpp
 #include "WiFiS3.h"
 #include "arduino_secrets.h"
 

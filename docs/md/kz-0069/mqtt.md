@@ -111,7 +111,7 @@ The shield provides the following interfaces:
 
 - Adding header File
 
-```bash 
+```cpp
 #include <ArduinoMqttClient.h>
 #include <WiFiS3.h> 
 #include <string.h>
@@ -120,7 +120,7 @@ The shield provides the following interfaces:
 
 - Define variables 
 
-```bash
+```cpp
 // define WiFi connection information 
 char ssid[] = SECURE_SSID;
 char pass[] = SECURE_PASS;
@@ -133,13 +133,13 @@ int status = WL_IDLE_STATUS;
 ```
 - Initialize wifiClient and MqttClient 
 
-```bash
+```cpp
 WiFiClient wifiClient;
 MqttClient mqttClient(wifiClient);
 ```
 - Define MQTT broker server informations 
 
-```bash
+```cpp
 const char broker[] = "192.168.3.218";  // replace this IP to your MQTT broker server's IP address. 
 int port = 1883;   // MQTT broker server listen port number. 
 const char topic1[] = "uno/soil_moisture_ch1";  // mqtt broker's topic name 
@@ -147,7 +147,7 @@ const char topic1[] = "uno/soil_moisture_ch1";  // mqtt broker's topic name
 
 - Modifying setup() function
 
-```bash
+```cpp
 void setup() {
     // Initialize serial port 
     Serial.begin(9600);
@@ -197,7 +197,7 @@ void setup() {
 
 - Modifying loop() function 
 
-```bash
+```cpp
 void loop() {
   // call poll() regularly to allow the library to send MQTT keep alives which
   // avoids being disconnected by the broker
@@ -234,7 +234,7 @@ void loop() {
 ![ha_infor](./imgs/HA-infor-mqtt.png)
 
 ### Full demo code 
-```bash
+```cpp
 #include <ArduinoMqttClient.h>
 #include <WiFiS3.h>
 #include <string.h>

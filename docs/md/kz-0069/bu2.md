@@ -69,7 +69,7 @@ Open arduino IDE and create a new sketch by clicking `file`-> `New Sketch`
 
 ### Define LED Pin number 
 
-```bash
+```cpp
 #define HUMI3 A0 
 #define HUMI2 A1
 #define HUMI1 A2
@@ -77,7 +77,7 @@ Open arduino IDE and create a new sketch by clicking `file`-> `New Sketch`
 
 ### Initializing Pin and Serial port for monitoring.
 
-```bash
+```cpp
 void setup() {
     Serial.begin(9600);  // Initializing Serial monitor 
 }
@@ -85,7 +85,7 @@ void setup() {
 
 ### Modify loop section 
 
-```bash
+```cpp
 void loop() {
     int HUMI1_Raw_data = analogRead(HUMI1);
     int HUMI2_Raw_data = analogRead(HUMI2);

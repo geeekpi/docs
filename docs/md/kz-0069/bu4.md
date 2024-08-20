@@ -83,7 +83,7 @@ IRremote library as following figure.
 
 ### Import header files 
 
-```bash
+```cpp
 #include <IRremote.h>     // IR remote header file
 #include <Arduino.h>
 #include "PinDefinitionsAndMore.h"
@@ -104,7 +104,7 @@ next to create a new tab.
 
 and then copy following code and paste into it. 
 
-```bash
+```cpp
 /*
  *  PinDefinitionsAndMore.h
  *
@@ -455,7 +455,7 @@ void noTone(uint8_t aPinNumber){
 ```
 ### Define IR receiver and LEDs Pin number 
 
-```bash
+```cpp
 #define IR_RECEIVE_PIN 5
 #define DECODE_NEC
 
@@ -469,7 +469,7 @@ void noTone(uint8_t aPinNumber){
 
 Set the pin direction to `OUTPUT` in setup function sector.
 
-```bash
+```cpp
 void setup() {
 
     Serial.begin(115200); // note the baudrate is changed to 115200 
@@ -486,7 +486,7 @@ void setup() {
 
 ### Modify loop section 
 
-```bash
+```cpp
 void loop() {
   if (IrReceiver.decode()) {
     /*
@@ -521,7 +521,7 @@ void loop() {
 
 ### Demo code examples 
 
-```bash
+```cpp
 #include <IRremote.h>  // IR remote header file
 #include <Arduino.h>
 #include "PinDefinitionsAndMore.h"

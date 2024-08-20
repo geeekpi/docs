@@ -66,7 +66,7 @@ Open arduino IDE and create a new sketch by clicking `file`-> `New Sketch`
 
 ### Define LED Pin number 
 
-```bash
+```cpp
 #define Green_LED 6
 #define Red_LED 7
 ```
@@ -75,7 +75,7 @@ Open arduino IDE and create a new sketch by clicking `file`-> `New Sketch`
 
 Set the pin direction to `OUTPUT` in setup function sector.
 
-```bash
+```cpp
 void setup() {
     pinMode(Green_LED, OUTPUT);
     pinMode(Red_LED, OUTPUT);
@@ -84,7 +84,7 @@ void setup() {
 
 ### Modify loop section 
 
-```bash
+```cpp
 void loop() {
   digitalWrite(Green_LED, HIGH);
   digitalWrite(Red_LED, HIGH);

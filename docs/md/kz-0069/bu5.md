@@ -84,7 +84,7 @@ Please refer to: [Basic_Usage 4](./bu4.md)
 
 ### Import header files
 
-```bash
+```cpp
 #include <IRremote.h>     // IR remote header file
 #include <Arduino.h>
 #include "PinDefinitionsAndMore.h"
@@ -93,7 +93,7 @@ Please refer to: [Basic_Usage 4](./bu4.md)
 
 ### Define water pump relay pin number and IR receiver pinand IR receiver pin
 
-```bash
+```cpp
 #define water_pump_1 2 
 #define water_pump_2 3 
 #define water_pump_3 4 
@@ -109,7 +109,7 @@ Please refer to: [Basic_Usage 4](./bu4.md)
 
 Set the pin direction to `OUTPUT` in setup function sector.
 
-```bash
+```cpp
 void setup() {
     Serial.begin(115200);
 
@@ -130,7 +130,7 @@ void setup() {
 
 ### Modify loop section 
 
-```bash
+```cpp
 #include <IRremote.h>     // Include the IRremote library header file for handling IR signals.
 #include <Arduino.h>      // Include the main Arduino library.
 #include "PinDefinitionsAndMore.h" // Include a custom header file for pin definitions and possibly other configurations.
@@ -213,7 +213,7 @@ void loop() {
 
 ### Full demo code 
 
-```bash
+```cpp
 #include <IRremote.h>     // IR remote header file
 #include <Arduino.h>
 #include "PinDefinitionsAndMore.h"

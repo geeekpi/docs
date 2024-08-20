@@ -98,7 +98,7 @@ library as following figure.
 * Modify `user_setup.h` configure file's following lines, make sure you have
 following parameters in that file:
 
-```bash
+```cpp
 #define ST7789_DRIVER  
 #define TFT_RGB_ORDER TFT_BGR
 #define TFT_WIDTH 240
@@ -116,21 +116,21 @@ following parameters in that file:
 ```
 ### Import header files 
 
-```bash
+```cpp
 #include <TFT_eSPI.h>     // Hardware-specific library
 #include <TFT_eWidget.h>  // Widget library
 ```
 
 ### Define the Soil moisture sensor pin 
 
-```bash
+```cpp
 #define moisture_1 A2 
 #define moisture_2 A1 
 ```
 
 ### Create instance of TFT display.
 
-```bash
+```cpp
 // create instance of TFT display
 TFT_eSPI tft = TFT_eSPI();
 ```
@@ -139,7 +139,7 @@ TFT_eSPI tft = TFT_eSPI();
 
 * rh1 for moisture_1, rh2 for moisture_2.
 
-```bash
+```cpp
 MeterWidget rh1 = MeterWidget(&tft);
 MeterWidget rh2 = MeterWidget(&tft);
 ```
@@ -148,7 +148,7 @@ MeterWidget rh2 = MeterWidget(&tft);
 
 Set the pin direction to `OUTPUT` in setup function sector.
 
-```bash
+```cpp
 void setup() {
 
     Serial.begin(115200); // note the baudrate is changed to 115200 
@@ -170,7 +170,7 @@ void setup() {
 
 ### Modify loop section 
 
-```bash
+```cpp
 void loop() {
     float value_1 = analogRead(moisture_1);
     float value_2 = analogRead(moisture_2);
@@ -184,7 +184,7 @@ void loop() {
 
 ### Demo code examples 
 
-```bash
+```cpp
 #include <TFT_eSPI.h>
 #include <TFT_eWidget.h>
 

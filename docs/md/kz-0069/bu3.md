@@ -112,7 +112,7 @@ Open arduino IDE and create a new sketch by clicking `file`-> `New Sketch`
 
 ### Import Header files
 
-```bash
+```cpp
 #include <Math.h>         // import Math library
 #include <vector>         // import vector library
 #include <string.h>
@@ -123,7 +123,7 @@ Open arduino IDE and create a new sketch by clicking `file`-> `New Sketch`
 * The pins and the sensors are limited by the circuit on arduino Hat board.
 * Please refer to `Pinout Chart` section.
 
-```bash
+```cpp
 #define TEMP3 A3
 #define TEMP2 A4
 #define TEMP1 A5
@@ -131,7 +131,7 @@ Open arduino IDE and create a new sketch by clicking `file`-> `New Sketch`
 
 ### Define function for NTC formula 
 
-```bash
+```cpp
 // setting a structure to store tempvalue and index information
 struct TempValue {
   int value;
@@ -186,7 +186,7 @@ TempValue closestNumber(const std::vector<int>& temp_table, int value) {
 
 * Initializing serial port for serial monitor.
 
-```bash
+```cpp
 void setup() {
     Serial.begin(9600);
 }
@@ -194,7 +194,7 @@ void setup() {
 
 ### Modify loop section 
 
-```bash
+```cpp
 void loop() {
 
     float ntc_1_raw_data = analogRead(TEMP1);
