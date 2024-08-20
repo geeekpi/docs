@@ -207,13 +207,13 @@ Input your username and password. select language and then login.
 
 ![add_integration_1](./imgs/add_integration_1.png)
 
-![add_integration_2](./imgs/add_integration_1.png)
+![add_integration_2](./imgs/add_integration_2.png)
 
-![add_integration_3](./imgs/add_integration_1.png)
+![add_integration_3](./imgs/add_integration_3.png)
 
-![add_integration_4](./imgs/add_integration_1.png)
+![add_integration_4](./imgs/add_integration_4.png)
 
-![add_integration_5](./imgs/add_integration_1.png)
+![add_integration_5](./imgs/add_integration_5.png)
 
 * Adding card in overview dashboard 
 Please add card according to following figures
