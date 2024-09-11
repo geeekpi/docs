@@ -38,5 +38,5 @@ A Light Emitting Diode (LED) is a semiconductor light source that emits light wh
 
 ## Examples 
 
-* [Proejct 1 Blinking LED](../arduino/p1.md) (on Arduino) 
+* [Proejct 1 Blinking LED](../kz-0073/arduino/p1.md) (on Arduino) 
 

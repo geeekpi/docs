@@ -1,4 +1,4 @@
-# ** Jumper Wire Organizers ** 
+# **Jumper Wire Organizers** 
 
 ## Description
 

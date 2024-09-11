@@ -1,4 +1,4 @@
-# ** 9V battery snap to DC adapter **
+# **9V battery snap to DC adapter**
 
 ![9v_battery_cap](../../imgs/9v_battery_snap_to_DC_Adapter.png)
 

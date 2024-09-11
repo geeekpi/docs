@@ -1,4 +1,4 @@
-# ** Push Button ** 
+# **Push Button** 
 A push button, also known as a pushbutton switch, is a type of electrical switch that is operated by pressing it with a finger or thumb. Here are its characteristics, usage methods, and precautions explained in English:
 
 ## Characteristics of Push Button:
@@ -38,4 +38,4 @@ Push buttons are a simple yet essential component in many electronic and mechani
 
 ## Example
 * [Project_2 Blinking LED with Button Control Project with Arduino UNO R4 WiFi
-](../../md/arduino/p2.md) 
+](../../md/kz-0073/arduino/p2.md) 
