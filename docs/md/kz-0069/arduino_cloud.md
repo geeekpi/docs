@@ -34,7 +34,7 @@ In summary, Arduino Cloud offers a powerful yet user-friendly platform for IoT p
 
 ## Demo Tutorial Video
 
-![type:video](https://www.youtube.com/watch?v=3D3Mkoj4l2M)
+![type:video](https://www.youtube.com/embed/3D3Mkoj4l2M?si=ZRTar52Q21G_nLbA)
 
 ---- 
 
