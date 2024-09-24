@@ -80,7 +80,7 @@ Open arduino IDE and create a new sketch by clicking `file`-> `New Sketch`
 
 ### Install IRremove Library
 
-Please refer to: [Basic_Usage 4](./bu4.md)
+Please refer to: [Basic_Usage 4](./basic_usage_4.md)
 
 ### Import header files
 

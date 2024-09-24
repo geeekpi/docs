@@ -13,6 +13,7 @@ nav:
     - Networking: 'md/kz-0069/network_configuration.md'
     - MQTT broker: 'md/kz-0069/mosquitto_mqtt_broker.md'
     - HomeAssistant: 'md/kz-0069/home_assistant.md'
+    - Arduino Cloud: 'md/kz-0069/arduino_cloud.md'
 
   - KZ-0068 Universal Sensor Kit: 
     - What's in the kit: 'md/component.md'
