@@ -1,6 +1,35 @@
 site_name: 52Pi Docs 
 nav:
   - HOME: 'index.md'
+  - KZ-0069 Plant Watering Kit:
+    - What's in the kit: 'md/kz-0069/package_includes.md'
+    - Getting Start: 'md/kz-0069/getting_start.md'
+    - Basic Usage 1: 'md/kz-0069/basic_usage_1.md'
+    - Basic Usage 2: 'md/kz-0069/basic_usage_2.md'
+    - Basic Usage 3: 'md/kz-0069/basic_usage_3.md'
+    - Basic Usage 4: 'md/kz-0069/basic_usage_4.md'
+    - Basic Usage 5: 'md/kz-0069/basic_usage_5.md'
+    - Basic Usage 6: 'md/kz-0069/basic_usage_6.md'
+    - Networking: 'md/kz-0069/network_configuration.md'
+    - MQTT broker: 'md/kz-0069/mosquitto_mqtt_broker.md'
+    - HomeAssistant: 'md/kz-0069/home_assistant.md'
+    - Arduino Cloud: 'md/kz-0069/arduino_cloud.md'
+
+  - KZ-0073 Education Starter Kit: 
+    - What's in the kit: 'md/kz-0073/whatinkit.md'
+    - Preparation: 'md/kz-0073/preparation.md'
+    - Getting Start : 'md/kz-0073/getting-start.md'
+    - Project 1: 'md/kz-0073/arduino/p1.md'
+    - Project 2: 'md/kz-0073/arduino/p2.md'
+    - Project 3: 'md/kz-0073/arduino/p3.md'
+    - Project 4: 'md/kz-0073/arduino/p4.md'
+    - Project 5: 'md/kz-0073/arduino/p5.md'
+    - Project 6: 'md/kz-0073/arduino/p6.md'
+    - Project 7: 'md/kz-0073/arduino/p7.md'
+    - Project 8: 'md/kz-0073/arduino/p8.md'
+    - Project 9: 'md/kz-0073/arduino/p9.md'
+    - Project 10: 'md/kz-0073/arduino/p10.md'
+
   - EP-0243 ESPHome IoT Node: 
     - what's in the kit: 'md/EP-0243/esphome_iot_node.md'
     - Getting Start: 'md/EP-0243/getting_start.md'
@@ -18,36 +47,6 @@ nav:
     - Chapter 12 Read signal from IR receiver: 'md/EP-0243/12.ir_receiver.md'
     - Chapter 13 ESPHome Configuration: 'md/EP-0243/13.esphome_configure.md'
     - Chapter 14 Intergration all in one: 'md/EP-0243/14.all_in_one.md'
-
-  - KZ-0069 Plant Watering Kit:
-    - What's in the kit: 'md/kz-0069/package_includes.md'
-    - Getting Start: 'md/kz-0069/getting_start.md'
-    - Basic Usage 1: 'md/kz-0069/basic_usage_1.md'
-    - Basic Usage 2: 'md/kz-0069/basic_usage_2.md'
-    - Basic Usage 3: 'md/kz-0069/basic_usage_3.md'
-    - Basic Usage 4: 'md/kz-0069/basic_usage_4.md'
-    - Basic Usage 5: 'md/kz-0069/basic_usage_5.md'
-    - Basic Usage 6: 'md/kz-0069/basic_usage_6.md'
-    - Networking: 'md/kz-0069/network_configuration.md'
-    - MQTT broker: 'md/kz-0069/mosquitto_mqtt_broker.md'
-    - HomeAssistant: 'md/kz-0069/home_assistant.md'
-    - Arduino Cloud: 'md/kz-0069/arduino_cloud.md'
-
-
-  - KZ-0073 Education Starter Kit: 
-    - What's in the kit: 'md/kz-0073/whatinkit.md'
-    - Preparation: 'md/kz-0073/preparation.md'
-    - Getting Start : 'md/kz-0073/getting-start.md'
-    - Project 1: 'md/kz-0073/arduino/p1.md'
-    - Project 2: 'md/kz-0073/arduino/p2.md'
-    - Project 3: 'md/kz-0073/arduino/p3.md'
-    - Project 4: 'md/kz-0073/arduino/p4.md'
-    - Project 5: 'md/kz-0073/arduino/p5.md'
-    - Project 6: 'md/kz-0073/arduino/p6.md'
-    - Project 7: 'md/kz-0073/arduino/p7.md'
-    - Project 8: 'md/kz-0073/arduino/p8.md'
-    - Project 9: 'md/kz-0073/arduino/p9.md'
-    - Project 10: 'md/kz-0073/arduino/p10.md'
 
   - KZ-0068 Universal Sensor Kit(TBD): 
     - What's in the kit: 'md/kz-0068/whatinkit.md'
