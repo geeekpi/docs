@@ -1,6 +1,24 @@
 site_name: 52Pi Docs 
 nav:
   - HOME: 'index.md'
+  - EP-0243 ESPHome IoT Node: 
+    - what's in the kit: 'md/EP-0243/esphome_iot_node.md'
+    - Getting Start: 'md/EP-0243/getting_start.md'
+    - Chapter 1 Install Docker: 'md/EP-0243/01.install_docker.md'
+    - Chapter 2 Setup MQTT container[optional] : 'md/EP-0243/02.setup_mqtt_container.md'
+    - Chapter 3 Setup HomeAssistant container: 'md/EP-0243/03.setup_ha_container.md'
+    - Chapter 4 Setup ESPHome container: 'md/EP-0243/04.setup_esphome_container.md'
+    - Chapter 5 Add ESPHome Intergration: 'md/EP-0243/05.add_esphome_intergration.md'
+    - Chapter 6 Upload Firmware: 'md/EP-0243/06.upload_firmware.md'
+    - Chapter 7 Blink LED: 'md/EP-0243/07.blink_led.md'
+    - Chapter 8 Read Temperature from NTC: 'md/EP-0243/08.read_temperature_from_ntc.md'
+    - Chapter 9 Read humidity from soil moisture: 'md/EP-0243/09.read_humidity_from_soil_moisture.md'
+    - Chapter 10 Display Image on 1.3-inch IPS display: 'md/EP-0243/10.display_configure.md'
+    - Chapter 11 Grab image from camera: 'md/EP-0243/11.camera.md'
+    - Chapter 12 Read signal from IR receiver: 'md/EP-0243/12.ir_receiver.md'
+    - Chapter 13 ESPHome Configuration: 'md/EP-0243/13.esphome_configure.md'
+    - Chapter 14 Intergration all in one: 'md/EP-0243/14.all_in_one.md'
+
   - KZ-0069 Plant Watering Kit:
     - What's in the kit: 'md/kz-0069/package_includes.md'
     - Getting Start: 'md/kz-0069/getting_start.md'
@@ -15,7 +33,23 @@ nav:
     - HomeAssistant: 'md/kz-0069/home_assistant.md'
     - Arduino Cloud: 'md/kz-0069/arduino_cloud.md'
 
-  - KZ-0068 Universal Sensor Kit: 
+
+  - KZ-0073 Education Starter Kit: 
+    - What's in the kit: 'md/kz-0073/whatinkit.md'
+    - Preparation: 'md/kz-0073/preparation.md'
+    - Getting Start : 'md/kz-0073/getting-start.md'
+    - Project 1: 'md/kz-0073/arduino/p1.md'
+    - Project 2: 'md/kz-0073/arduino/p2.md'
+    - Project 3: 'md/kz-0073/arduino/p3.md'
+    - Project 4: 'md/kz-0073/arduino/p4.md'
+    - Project 5: 'md/kz-0073/arduino/p5.md'
+    - Project 6: 'md/kz-0073/arduino/p6.md'
+    - Project 7: 'md/kz-0073/arduino/p7.md'
+    - Project 8: 'md/kz-0073/arduino/p8.md'
+    - Project 9: 'md/kz-0073/arduino/p9.md'
+    - Project 10: 'md/kz-0073/arduino/p10.md'
+
+  - KZ-0068 Universal Sensor Kit(TBD): 
     - What's in the kit: 'md/kz-0068/whatinkit.md'
     - Preparation: 'md/kz-0068/preparation.md'
     - Getting Start : 'md/kz-0068/getting-start.md'
@@ -86,26 +120,10 @@ nav:
     - Proejct 22 PS2 Joystick OLED: 'md/kz-0068/pico/project_22.md'
     - Proejct 23 LCD1602 BMP280: 'md/kz-0068/pico/project_23.md'
     - Proejct 24 LCD1602 MPU6050: 'md/kz-0068/pico/project_24.md'
-
-  - KZ-0073 Education Starter Kit: 
-    - What's in the kit: 'md/kz-0073/whatinkit.md'
-    - Preparation: 'md/kz-0073/preparation.md'
-    - Getting Start : 'md/kz-0073/getting-start.md'
-    - Project 1: 'md/kz-0073/arduino/p1.md'
-    - Project 2: 'md/kz-0073/arduino/p2.md'
-    - Project 3: 'md/kz-0073/arduino/p3.md'
-    - Project 4: 'md/kz-0073/arduino/p4.md'
-    - Project 5: 'md/kz-0073/arduino/p5.md'
-    - Project 6: 'md/kz-0073/arduino/p6.md'
-    - Project 7: 'md/kz-0073/arduino/p7.md'
-    - Project 8: 'md/kz-0073/arduino/p8.md'
-    - Project 9: 'md/kz-0073/arduino/p9.md'
-    - Project 10: 'md/kz-0073/arduino/p10.md'
   - Contact: 
     - E-Mail: 'md/contact.md'
 
 theme: readthedocs
-
 
 markdown_extensions:
   - pymdownx.highlight:
