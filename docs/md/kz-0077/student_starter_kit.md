@@ -55,12 +55,10 @@ This kit is a comprehensive starting point for anyone looking to get into Arduin
 ## Product Outlook
 
 * What is inside the package? 
+
 ![studentkit](./imgs/KZ-0077-2.jpg)
 
-* Metal case 
-![studentkit](./imgs/KZ-0077-3.jpg)
-
-* Unique design for Arduino R4 series 
+* Different views of the case
 
 ![studentkit](./imgs/KZ-0077-4.jpg)
 
