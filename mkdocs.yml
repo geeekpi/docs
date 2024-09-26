@@ -30,6 +30,9 @@ nav:
     - Project 9: 'md/kz-0073/arduino/p9.md'
     - Project 10: 'md/kz-0073/arduino/p10.md'
 
+  - KZ-0077 Student Starter Kit for Arduino UNO R4 WiFi:
+    - Details about the kit: 'md/kz-0077/student_starter_kit.md'
+
   - EP-0243 ESPHome IoT Node: 
     - what's in the kit: 'md/EP-0243/esphome_iot_node.md'
     - Getting Start: 'md/EP-0243/getting_start.md'
