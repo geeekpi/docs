@@ -37,7 +37,10 @@ It provides a comprehensive set of tools and features that cater to individuals,
 - **Collaboration**: Work with others on projects by sharing dashboards and sketches.
 - **Learning**: Arduino Cloud is an excellent platform for learning about IoT and connected devices, with a wealth of resources and a supportive community.
 
+![type:video](./imgs/feature_03.mp4)
+
 In summary, Arduino Cloud offers a powerful yet user-friendly platform for IoT project development, suitable for a wide range of users from hobbyists to enterprise developers.
+
 
 ## Getting start 
 
