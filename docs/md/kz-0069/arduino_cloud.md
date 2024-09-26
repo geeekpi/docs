@@ -5,8 +5,6 @@
 Arduino Cloud is an online platform designed to simplify the process of creating, deploying, and monitoring IoT projects. 
 It provides a comprehensive set of tools and features that cater to individuals, schools, and businesses, making it easy to connect devices, visualize data, and control projects from anywhere in the world.
 
-![type:video](./imgs/feature_04.mp4)
-
 #### Key Features
 
 - **Easy Setup**: Arduino Cloud automates the initial configuration of your devices, allowing you to get started quickly without extensive coding knowledge.
@@ -19,8 +17,6 @@ It provides a comprehensive set of tools and features that cater to individuals,
 - **Sharing Capabilities**: Share your dashboards with others, allowing collaboration or demonstration of your projects.
 - **Security**: Arduino Cloud services are ISO 27001 certified, ensuring a secure environment for your IoT projects.
 
-![type:video](./imgs/feature_01.mp4)
-
 #### Benefits
 
 - **Simplicity**: Arduino Cloud abstracts much of the complexity involved in IoT projects, making it accessible to beginners and experts alike.
@@ -28,16 +24,12 @@ It provides a comprehensive set of tools and features that cater to individuals,
 - **Flexibility**: With support for a wide range of devices and programming languages, Arduino Cloud is versatile enough to fit various project requirements.
 - **Community**: As part of the Arduino ecosystem, you can leverage the knowledge and support of a large community of makers and developers.
 
-![type:video](./imgs/feature_02.mp4)
-
 #### What Arduino Cloud Can Bring to You
 
 - **Efficiency**: Save time on project setup and maintenance with automated features and remote management capabilities.
 - **Innovation**: Quickly prototype and iterate on your IoT ideas using Arduino Cloud's intuitive tools.
 - **Collaboration**: Work with others on projects by sharing dashboards and sketches.
 - **Learning**: Arduino Cloud is an excellent platform for learning about IoT and connected devices, with a wealth of resources and a supportive community.
-
-![type:video](./imgs/feature_03.mp4)
 
 In summary, Arduino Cloud offers a powerful yet user-friendly platform for IoT project development, suitable for a wide range of users from hobbyists to enterprise developers.
 
