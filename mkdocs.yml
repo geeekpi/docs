@@ -1,10 +1,14 @@
 site_name: 52Pi Docs 
 nav:
   - HOME: 'index.md'
+  - KZ-0054 Cloud Ready Starter Kit for Arduino UNO R4 WiFi:
+    - What's in the kit: 'md/kz-0054/whatinkit.md'
+
   - EP-0243 CAN Node Controller Board for Arduino UNO R4: 
     - What's in the kit: 'md/EP-0243/whatinkit.md'
     - Getting Start : 'md/EP-0243/getting_start.md'
     - Accessories: 'md/EP-0244/can_node_temperature_sensor_module.md' 
+
   - KZ-0069 Plant Watering Kit:
     - What's in the kit: 'md/kz-0069/package_includes.md'
     - Getting Start: 'md/kz-0069/getting_start.md'
