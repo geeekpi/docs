@@ -66,7 +66,7 @@ This is an Arduino UNO R4 Wi-Fi kit. Based on the characteristics of the UNO R4 
 
 - Download from GitHub: [https://github.com/geeekpi/Arduino_uno_r4_wifi_kit](https://github.com/geeekpi/Arduino_uno_r4_wifi_kit)
 
-- TF card Contents Download: [https://drive.google.com/drive/folders/1gkQpzU3kz5zWbEM9lW8WfVWSUWnAWVCe?usp=sharing](https://drive.google.com/drive/folders/1gkQpzU3kz5zWbEM9lW8WfVWSUWnAWVCe?usp=sharing)
+- TF card Contents Download: [https://down.52pi.com](https://down.52pi.com)
 
 ## Referrence Video:
 
