@@ -1,6 +1,91 @@
-# Other basic experiment Demo 
+# Ultimate Starter Kit for Raspberry Pi Pico 2 WH 
 
-### Experiment 1: Blinking an LED
+## Product Information 
+
+* Product Name: Ultimate Starter Kit for Raspberry Pi Pico 2 WH 
+
+* Product SKU: KZ-0084
+
+## Product Description
+
+Congratulations on purchasing the 52Pi Raspberry Pi Pico 2W Ultimate Starter Kit! This comprehensive kit is designed for beginners, educators, and hobbyists who want to explore the world of electronics and programming with the powerful Raspberry Pi Pico 2W microcontroller.
+
+## Kit Components
+
+Our Ultimate Starter Kit includes a variety of sensors and components to help you learn and experiment:
+
+- Light Emitting Diode (LED)
+- Buzzer
+- Ultrasonic Sensor
+- Slide Potentiometer
+- Rotary Encoder
+- PS2 Joystick
+- Soil Moisture Sensor
+- Rain Drop Sensor
+- Vibration Sensor
+- Tilt Sensor
+- Light-sensitive Sensor
+- Sound Sensor
+- 52Pi Experiment Tray
+- DuPont Wires
+- Breadboard
+
+## Features
+
+- **Comprehensive Learning Tool**: Provides hands-on experience with different types of sensors and electronic components
+- **Easy to Use**: Clear documentation and straightforward connections make it accessible for beginners
+- **Versatile Projects**: Create a wide range of projects from simple LED blinking to complex environmental monitoring systems
+- **Educational Resource**: Perfect for schools, makerspaces, and self-learners
+- **Well-organized Components**: All parts are carefully selected and tested for compatibility with Raspberry Pi Pico 2W
+
+## Getting Started
+
+1. **Connect Components**: Use the included DuPont wires to connect sensors to the breadboard and then to your Raspberry Pi Pico 2W
+2. **Upload Code**: Use Thonny or another MicroPython-compatible IDE to upload example code to your Pico
+3. **Experiment and Learn**: Modify the code and connections to explore different functionalities
+
+## Who Should Use This Kit
+
+- **Beginners**: Those new to electronics and programming who want to learn through hands-on experimentation
+- **Educators**: Teachers looking for engaging STEM teaching tools
+- **Hobbyists**: DIY enthusiasts interested in creating interactive projects
+- **Makers**: Creators developing prototypes for innovative IoT devices
+
+## Additional Resources
+
+For detailed tutorials, wiring diagrams, technical explanations, and MicroPython demo codes for each component, please visit our official documentation website: [52Pi Docs](https://docs.52pi.com)
+
+Our website also offers video demonstrations to guide you through each experiment step-by-step.
+
+## Getting Start 
+
+* [Install Programming IDE][1]
+* [Download the latest MicroPython Firmware][2]
+* [Put Your Pico 2 WH into Bootloader Mode][3]
+* [Flash the MicroPython Firmware][4]
+* [Configure Thonny IDE to Work with Pico 2 WH][5]
+* [Testing Your Setup][6]
+
+[1]: https://docs.52pi.com/md/kz-0083/getting-start/#install-programming-ide
+[2]: https://docs.52pi.com/md/kz-0083/getting-start/#step-2-download-the-latest-micropython-firmware
+[3]: https://docs.52pi.com/md/kz-0083/getting-start/#step-3-put-your-pico-2-wh-into-bootloader-mode
+[4]: https://docs.52pi.com/md/kz-0083/getting-start/#step-4-flash-the-micropython-Firmware
+[5]: https://docs.52pi.com/md/kz-0083/getting-start/#step-5-configure-thonny-ide-to-work-with-pico-2-wh 
+[6]: https://docs.52pi.com/md/kz-0083/getting-start/#step-6-testing-your-setup 
+
+## Demo Projects 
+* [Experiment 1: Blinking an LED][11]
+* [Experiment 2: Reading a Flame Sensor][12]
+* [Experiment 3: Measuring Soil Moisture][13]
+* [Experiment 4: Controlling a Servo Motor][14]
+* [Experiment 5: Measuring Distance with an Ultrasonic Sensor][15]
+* [Experiment 6: Detecting Light Intensity with a Light Sensor][16]
+* [Experiment 7: Measuring Temperature with a Thermistor][17]
+* [Experiment 8: Detecting Sound with a Sound Sensor][18]
+* [Experiment 9: Controlling a Buzzer][19]
+* [Experiment 10: Using a Rotary Encoder][20]
+
+## Experiment 1: Blinking an LED
 
 #### Application Scenario
 Create a simple LED blinker to signal an event, such as a heartbeat monitor or a warning indicator.
@@ -38,8 +123,7 @@ while True:
 * **time.sleep(1)**: Pauses the program for 1 second.
 * **led.value(0)**: Sets the pin to LOW, turning off the LED.
 
-
-### Experiment 2: Reading a Flame Sensor
+## Experiment 2: Reading a Flame Sensor
 
 #### Application Scenario
 
@@ -79,7 +163,7 @@ while True:
 * **flame_sensor.value()**: Reads the digital value from the flame sensor (1 for flame detected, 0 for no flame).
 * **print()**: Outputs the result to the console.
 
-### Experiment 3: Measuring Soil Moisture
+## Experiment 3: Measuring Soil Moisture
 
 #### Application Scenario
 Monitor the moisture level of a plant's soil to automate watering.
@@ -116,7 +200,7 @@ while True:
 * **soil_sensor.value()**: Reads the digital value from the soil moisture sensor (1 for dry soil, 0 for moist soil).
 * **print()**: Outputs the moisture status to the console.
 
-### Experiment 4: Controlling a Servo Motor
+## Experiment 4: Controlling a Servo Motor
 
 #### Application Scenario
 
@@ -156,7 +240,7 @@ while True:
 * **servo.duty()**: Sets the duty cycle to control the servo position (30 for 0°, 77 for 90°, 123 for 180°).
 * **time.sleep(1)**: Pauses the program for 1 second.
 
-### Experiment 5: Measuring Distance with an Ultrasonic Sensor
+## Experiment 5: Measuring Distance with an Ultrasonic Sensor
 
 #### Application Scenario
 
@@ -202,15 +286,7 @@ while True:
 * **distance = pulse_time * 0.034 / 2**: Calculates the distance in centimeters.
 * **print()**: Outputs the distance to the console.
 
-----
-
-### Additional Experiments with Raspberry Pi Pico 2 WH
-
-This section provides additional experiments using the Raspberry Pi Pico 2 WH and various sensors included in the starter kit. Each experiment includes a practical application scenario, an explanation of the working principle, circuit wiring instructions, and a MicroPython demo code with detailed explanations.
-
----
-
-### Experiment 6: Detecting Light Intensity with a Light Sensor
+## Experiment 6: Detecting Light Intensity with a Light Sensor
 
 #### Application Scenario
 
@@ -252,7 +328,7 @@ while True:
 
 ---
 
-### Experiment 7: Measuring Temperature with a Thermistor
+## Experiment 7: Measuring Temperature with a Thermistor
 
 #### Application Scenario
 
@@ -302,7 +378,7 @@ while True:
 
 ---
 
-### Experiment 8: Detecting Sound with a Sound Sensor
+## Experiment 8: Detecting Sound with a Sound Sensor
 
 #### Application Scenario
 
@@ -343,7 +419,7 @@ while True:
 
 ---
 
-### Experiment 9: Controlling a Buzzer
+## Experiment 9: Controlling a Buzzer
 
 #### Application Scenario
 
@@ -383,7 +459,7 @@ while True:
 
 ---
 
-### Experiment 10: Using a Rotary Encoder
+## Experiment 10: Using a Rotary Encoder
 
 #### Application Scenario
 
@@ -437,6 +513,16 @@ while True:
 
 ---
 
+[11]: http://docs.52pi.com/md/kz-0084/projects/#experiment-1-blinking-an-led
+[12]: http://docs.52pi.com/md/kz-0084/projects/#experiment-2-reading-a-flame-sensor 
+[13]: http://docs.52pi.com/md/kz-0084/projects/#experiment-3-measuring-soil-moisture
+[14]: http://docs.52pi.com/md/kz-0084/projects/#experiment-4-controlling-a-servo-motor
+[15]: http://docs.52pi.com/md/kz-0084/projects/#experiment-5-measuring-distance-with-an-ultrasonic-sensor
+[16]: http://docs.52pi.com/md/kz-0084/projects/#experiment-6-detecting-light-intensity-with-a-light-sensor
+[17]: http://docs.52pi.com/md/kz-0084/projects/#experiment-7-measuring-temperature-with-a-thermistor
+[18]: http://docs.52pi.com/md/kz-0084/projects/#experiment-8-detecting-sound-with-a-sound-sensor
+[19]: http://docs.52pi.com/md/kz-0084/projects/#experiment-9-controlling-a-buzzer
+[20]: http://docs.52pi.com/md/kz-0084/projects/#experiment-10-using-a-rotary-encoder
 
 ### Conclusion
 
