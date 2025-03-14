@@ -61,6 +61,32 @@ Each experiment includes a practical application scenario, an explanation of the
 
 ---
 
+## Basic Steps
+* [Install Programming IDE][1]
+* [Step 1: Download and Install Thonny IDE][2]
+* [Step 2: Download the Latest MicroPython Firmware][3]
+* [Step 3: Put Your Pico 2 WH into Bootloader Mode][4]
+* [Step 4: Flash the MicroPython Firmware][5]
+* [Step 6: Testing Your Setup][6]
+
+## Basic Demo Projects 
+* [Project 1 Blinking LED](./project1.md)
+* [Project 2 Buttons](./project2.md)
+* [Project 3 Music Box](./project3.md)
+* [Project 4 Potentiometer](./project4.md)
+* [Project 5 Fun with Servo and Friends](./project5.md)
+* [Project 6 Stepper Motor](./project6.md)
+* [Project 7 Network](./project7.md)
+* [Project 8 LCD1602 Display Module](./project8.md)
+* [Project 9 Comprehensive Experiment with Network Operation ](./project9.md)
+
+[1]: https://docs.52pi.com/md/kz-0083/getting-start/#install-programming-ide
+[2]: https://docs.52pi.com/md/kz-0083/getting-start/#step-1-download-and-install-thonny-ide
+[3]: https://docs.52pi.com/md/kz-0083/getting-start/#step-1-download-and-install-thonny-ide
+[4]: https://docs.52pi.com/md/kz-0083/getting-start/#step-1-download-and-install-thonny-ide
+[5]: https://docs.52pi.com/md/kz-0083/getting-start/#step-1-download-and-install-thonny-ide
+[6]: https://docs.52pi.com/md/kz-0083/getting-start/#step-1-download-and-install-thonny-ide
+
 ### Install Programming IDE 
 
 How to Install Thonny IDE and Flash MicroPython on Raspberry Pi Pico 2 WH?
