@@ -16,7 +16,17 @@ Whether you're a student, hobbyist, or educator, this kit provides everything yo
 | Push button | Tactile buttons with caps | 5 |
 | Buzzer | Audible alert component | 2 |
 | Long Breadboard | 800-hole breadboard for prototyping | 1 |
+| Flame Sensor | Detects flame or heat sources | 1 |
+| Rain Sensor | Detects water or moisture | 1 |
 | Servo | Standard servo motor for mechanical control | 1 |
+| Soil Moisture Sensor | Measures soil moisture levels | 1 |
+| Light Sensor | Detects light intensity | 1 |
+| Sound Sensor | Detects sound levels | 1 |
+| Tilt Sensor | Detects changes in orientation | 1 |
+| Ultrasonic Sensor | Measures distance using ultrasonic waves | 1 |
+| Slid Pot HW-233 | Variable resistor for analog input | 1 |
+| PS2 Joystick | Analog joystick for user input | 1 |
+| Rotate Encoder | Rotational encoder for precise input | 1 |
 | MicroUSB Programming Cable | Cable for programming and power supply | 1 |
 | Dupont Jump Wire (Male-to-Female) | For connecting components to the breadboard | 40 |
 | Dupont Jump Wire (Male-to-Male) | For connecting components to the breadboard | 40 |

@@ -14,21 +14,31 @@ Congratulations on purchasing the 52Pi Raspberry Pi Pico 2W Ultimate Starter Kit
 
 Our Ultimate Starter Kit includes a variety of sensors and components to help you learn and experiment:
 
-- Light Emitting Diode (LED)
-- Buzzer
-- Ultrasonic Sensor
-- Slide Potentiometer
-- Rotary Encoder
-- PS2 Joystick
-- Soil Moisture Sensor
-- Rain Drop Sensor
-- Vibration Sensor
-- Tilt Sensor
-- Light-sensitive Sensor
-- Sound Sensor
-- 52Pi Experiment Tray
-- DuPont Wires
-- Breadboard
+| Item | Description | Quantity |
+|:----:|:-----------:|:--------:|
+| Raspberry Pi Pico 2 WH | A WiFi-enabled microcontroller board with headers soldered on | 1 |
+| LED Indicator | Red, white, blue, and yellow LEDs (5 each) | 20 |
+| 220ohm Resistor | Red, white, blue, and yellow resistors (5 each) | 20 |
+| Push button | Tactile buttons with caps | 5 |
+| Buzzer | Audible alert component | 2 |
+| Long Breadboard | 800-hole breadboard for prototyping | 1 |
+| Flame Sensor | Detects flame or heat sources | 1 |
+| Rain Sensor | Detects water or moisture | 1 |
+| Servo | Standard servo motor for mechanical control | 1 |
+| Soil Moisture Sensor | Measures soil moisture levels | 1 |
+| Light Sensor | Detects light intensity | 1 |
+| Sound Sensor | Detects sound levels | 1 |
+| Tilt Sensor | Detects changes in orientation | 1 |
+| Ultrasonic Sensor | Measures distance using ultrasonic waves | 1 |
+| Slid Pot HW-233 | Variable resistor for analog input | 1 |
+| PS2 Joystick | Analog joystick for user input | 1 |
+| Rotate Encoder | Rotational encoder for precise input | 1 |
+| MicroUSB Programming Cable | Cable for programming and power supply | 1 |
+| Dupont Jump Wire (Male-to-Female) | For connecting components to the breadboard | 40 |
+| Dupont Jump Wire (Male-to-Male) | For connecting components to the breadboard | 40 |
+| Resistor Color Code Chart | Reference chart for resistor values | 1 |
+| Plastic Box | Storage box for organizing components | 1 |
+| Instruction Manual | Comprehensive guide to get you started | 1 |
 
 ## Features
 
