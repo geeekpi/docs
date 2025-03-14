@@ -218,5 +218,22 @@ To ensure everything is working correctly, let's run a simple test program.
 You have now successfully installed Thonny IDE, flashed MicroPython onto your Raspberry Pi Pico 2 WH, and run a simple test program. You are ready to start exploring more advanced projects and experimenting with MicroPython on your Pico 2 WH!
 Happy coding!
 
-----
+## Raspberry Pi official Documentations:
 
+* [Raspberry Pi Pico 2 series product brief](https://datasheets.raspberrypi.com/pico/pico-2-product-brief.pdf)
+
+* [Raspberry Pi Pico 2 MicroPython SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf)
+
+* [Getting started with Raspberry Pi Pico-Series](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf)
+
+* [Raspberry Pi Pico-Series C/C++ SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)
+
+* [Raspberry Pi Pico/Pico-2-Fritzing-20240708](https://datasheets.raspberrypi.com/pico/Pico-2-Fritzing-20240708.fzpz)
+
+* [Raspberry Pi Pico 2 W Datasheet](https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf)
+
+* [Raspberry Pi Pico 2 W Pinout](https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf)
+
+* [Raspberry Pi Pico 2 W Schematic](https://datasheets.raspberrypi.com/picow/pico-2-w-schematic.pdf)
+
+* [More datasheet](https://datasheets.raspberrypi.com/)
