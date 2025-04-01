@@ -10,6 +10,8 @@
 
 Congratulations on purchasing the 52Pi Raspberry Pi Pico 2W Ultimate Starter Kit! This comprehensive kit is designed for beginners, educators, and hobbyists who want to explore the world of electronics and programming with the powerful Raspberry Pi Pico 2W microcontroller.
 
+![UltimateStarterKit](./imgs/KZ-0084-02.jpg)
+
 ## Kit Components
 
 Our Ultimate Starter Kit includes a variety of sensors and components to help you learn and experiment:
@@ -33,12 +35,15 @@ Our Ultimate Starter Kit includes a variety of sensors and components to help yo
 | Slid Pot HW-233 | Variable resistor for analog input | 1 |
 | PS2 Joystick | Analog joystick for user input | 1 |
 | Rotate Encoder | Rotational encoder for precise input | 1 |
+| MPU6050 | Gyroscope and Accelerometer Module | 1 |
 | MicroUSB Programming Cable | Cable for programming and power supply | 1 |
 | Dupont Jump Wire (Male-to-Female) | For connecting components to the breadboard | 40 |
 | Dupont Jump Wire (Male-to-Male) | For connecting components to the breadboard | 40 |
 | Resistor Color Code Chart | Reference chart for resistor values | 1 |
 | Plastic Box | Storage box for organizing components | 1 |
 | Instruction Manual | Comprehensive guide to get you started | 1 |
+
+![UltimateStarterKit02](./imgs/KZ-0084-Pico-2W-PL.jpg)
 
 ## Features
 
@@ -48,11 +53,15 @@ Our Ultimate Starter Kit includes a variety of sensors and components to help yo
 - **Educational Resource**: Perfect for schools, makerspaces, and self-learners
 - **Well-organized Components**: All parts are carefully selected and tested for compatibility with Raspberry Pi Pico 2W
 
+![UltimateStarterKit02](./imgs/KZ-0084-05.jpg)
+
 ## Getting Started
 
 1. **Connect Components**: Use the included DuPont wires to connect sensors to the breadboard and then to your Raspberry Pi Pico 2W
 2. **Upload Code**: Use Thonny or another MicroPython-compatible IDE to upload example code to your Pico
 3. **Experiment and Learn**: Modify the code and connections to explore different functionalities
+
+![UltimateStarterKit02](./imgs/KZ-0084-09.jpg)
 
 ## Who Should Use This Kit
 
@@ -66,6 +75,10 @@ Our Ultimate Starter Kit includes a variety of sensors and components to help yo
 For detailed tutorials, wiring diagrams, technical explanations, and MicroPython demo codes for each component, please visit our official documentation website: [52Pi Docs](https://docs.52pi.com)
 
 Our website also offers video demonstrations to guide you through each experiment step-by-step.
+
+## Pinout 
+
+![Pinout](./imgs/KZ-0084-06.jpg)
 
 ## Getting Start 
 
@@ -96,6 +109,9 @@ Our website also offers video demonstrations to guide you through each experimen
 * [Experiment 10: Using a Rotary Encoder][20]
 * [Experiment 11: 1.3inch IPS_LCD display][21]
 * [Experiment 12: 1.3inch IPS_LCD display imagebox][22]
+* [Experiment 13: Using PS2 Joystick][23]
+* [Experiment 14: MPU6050 Gyroscope and Accelerometer Module][24]
+* [Experiment 15: Raindrop Module][25]
 
 ## Experiment 1: Blinking a LED
 
@@ -1483,7 +1499,7 @@ import time
 # Configure server information
 # replace this ip address with your pico 2w' obtianed IP address.
 
-SERVER_IP = '192.168.3.46'
+SERVER_IP = '192.168.3.46' # Replace the IP address showed on LCD screen
 SERVER_PORT = 49152  # Replace with the actual port
 
 def rgb888_to_rgb565(r, g, b):
@@ -1782,203 +1798,489 @@ The provided Python code is designed to display images stored as binary files on
 
 This code is designed for a specific hardware setup involving an ST7789 LCD display and assumes that the images are stored as binary files in the `/img` directory. It reads these files line by line and displays them on the screen, creating a simple image slideshow.
 
-## Development on Language C/C++
+----
 
-The Raspberry Pi Pico-SDK has both advantages and disadvantages in the development process, which are as follows:
+## Experiment 13: Using PS2 Joystick
 
-### Advantages
-- **Comprehensive and Well-Integrated**
-  The Pico-SDK is specifically designed for the Raspberry Pi Pico and its RP2040 microcontroller. It provides a comprehensive set of tools and libraries that are tightly integrated with the hardware, making it easier for developers to access and control various features of the Pico, such as GPIO pins, peripherals like SPI, I2C, UART, and DMA. This integration ensures efficient and reliable communication between the software and hardware components.
-- **Performance Optimization**
-  The SDK is optimized for the Pico's hardware architecture, allowing developers to fully leverage the capabilities of the RP2040's dual-core Cortex-M0+ processor. This can result in better performance and more efficient use of system resources, which is particularly important for applications that require real-time processing or high-speed data handling.
-- **Active Community and Support**
-  As part of the Raspberry Pi ecosystem, the Pico-SDK benefits from a large and active community of developers. This means that there are plenty of resources available, including tutorials, forums, and example projects, which can help developers quickly get started and troubleshoot any issues they encounter. Additionally, the community-driven nature ensures that the SDK is regularly updated and improved based on user feedback.
-- **Cross-Platform Compatibility**
-  The Pico-SDK can be used on various operating systems, including Windows, macOS, and Linux. This flexibility allows developers to work in their preferred environment and ensures that the SDK can be easily integrated into different development workflows.
+#### Application Scenario
 
-### Disadvantages
-- **Learning Curve**
-  For beginners or developers who are not familiar with embedded systems or C/C++ programming, the Pico-SDK may have a steep learning curve. Understanding the intricacies of the SDK, as well as the underlying hardware architecture of the Pico, requires a significant amount of time and effort. This can be a barrier to entry for those who are new to this type of development.
-- **Complexity in Setup and Configuration**
-  Setting up the development environment for the Pico-SDK can be complex. It involves installing multiple tools and dependencies, such as the GNU ARM toolchain, and configuring the build system. Any issues or errors during this process can be difficult to diagnose and resolve, especially for inexperienced developers.
-- **Limited Documentation**
-  While there are resources available from the community, the official documentation for the Pico-SDK may not always be as comprehensive or detailed as some developers would like. This can make it challenging to fully understand certain aspects of the SDK or to find specific information needed for a particular project. As a result, developers may need to spend additional time searching for answers or experimenting with different approaches.
-- **Resource Constraints**
-  The Raspberry Pi Pico has limited system resources, such as memory and storage. This can be a limitation when working with the Pico-SDK, as developers need to carefully manage resources to ensure that their applications run efficiently without running out of memory or storage space. This may require optimizing code and using techniques such as memory pooling or data compression to make the most of the available resources.
+This experiment demonstrates how to interface a PS2 joystick with a Raspberry Pi Pico 2W. The joystick will be used to control various applications, such as moving a cursor on a screen, navigating through menus, or controlling a robot.
 
-## Getting Start with Pico-SDK 
+#### Working Principle
 
-In this tutorial, we will use a Raspberry Pi as a Linux host. We will set up the Pico-SDK environment under the Linux environment of the Raspberry Pi and proceed with programming. We will build a simple circuit with each module of the kit one by one and write code to implement applications such as data acquisition and distribution.
+The PS2 joystick communicates with the Raspberry Pi Pico 2W via analog and digital signals. 
+The analog signals from the joystick's axes are read using the ADC (Analog to Digital Converter) pins on the Pico, while the digital signal from the joystick's button is read using a GPIO pin.
 
-Sure, here is a detailed guide on setting up the Pico-SDK environment for the Raspberry Pi Pico 2W on a Raspberry Pi without any VS Code content:
+#### Circuit Wiring
 
----
+Here's how to wire the PS2 joystick to the Raspberry Pi Pico 2W:
 
-### Prerequisites
-1. **Hardware**:
-   - Raspberry Pi (any model with sufficient resources to run a Linux OS).
-   - Raspberry Pi Pico 2W.
-   - USB cable for connecting the Pico 2W to the Raspberry Pi.
-2. **Software**:
-   - Raspberry Pi OS (or any other Linux distribution) installed on the Raspberry Pi.
-   - Basic familiarity with Linux commands and terminal operations.
+* 1. **Axis X**: Connect to ADC pin 26 (GPIO 26)
+* 2. **Axis Y**: Connect to ADC pin 27 (GPIO 27)
+* 3. **Button**: Connect to GPIO pin 15
+* 4. **VCC**: Connect to 3.3V or 5V(VBUS) on the Pico
+* 5. **GND**: Connect to a Ground pin on the Pico
 
-### Step-by-Step Guide
+![project13_diagram](./imgs/project13_01.png)
 
-#### Step 1: Update Your Raspberry Pi
+Details:
 
-Open a terminal on your Raspberry Pi and run the following commands to update your system:
+![project13_diagram](./imgs/project13_02.png)
 
-```bash
-sudo apt update
-sudo apt upgrade -y
+#### Circuit Diagram
+
+```
+    PS2 Joystick        Raspberry Pi Pico 2W
+    ------------------  -------------------------
+    Axis X       --> ADC 26 (GPIO 26)
+    Axis Y       --> ADC 27 (GPIO 27)
+    Button       --> GPIO 15
+    VCC          --> 3.3V / 5V (VBUS) 
+    GND          --> GND
 ```
 
-#### Step 2: Install Required Tools and Libraries
+#### MicroPython Demo Code
 
-Install the necessary tools and libraries for compiling and flashing code to the Pico 2W:
+```python
+from machine import Pin, ADC
+import utime
 
-```bash
-sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
+# Initialize the ADC pins for the joystick axes
+axis_x = ADC(26)  # Axis X connected to ADC 26
+axis_y = ADC(27)  # Axis Y connected to ADC 27
+
+# Initialize the GPIO pin for the joystick button
+button = Pin(15, Pin.IN, Pin.PULL_UP)  # Button connected to GPIO 15, with pull-up
+
+def read_joystick():
+    # Read the X and Y axis values from the joystick
+    x_value = axis_x.read_u16()  # Read the 16-bit value from X axis
+    y_value = axis_y.read_u16()  # Read the 16-bit value from Y axis
+    return x_value, y_value
+
+def read_button():
+    # Read the button state
+    return button.value() == 0  # Button is pressed if the value is 0 (active low)
+
+while True:
+    # Read the joystick and button states
+    x, y = read_joystick()
+    button_pressed = read_button()
+
+    # Print the status information
+    print(f"Joystick X: {x}, Y: {y}, Button: {'Pressed' if button_pressed else 'Not Pressed'}")
+
+    # Simple logic demonstration
+    if button_pressed:
+        print("Button is pressed!")
+    else:
+        print("Button is not pressed.")
+
+    utime.sleep(0.1)  # Small delay to avoid overwhelming the output
 ```
 
-#### Step 3: Clone the Pico-SDK and Pico Examples
+On Thonny IDE:
 
-Create a directory to store the Pico-related files:
+![project13_diagram](./imgs/project13_02.png)
 
-```bash
-mkdir ~/pico
-cd ~/pico
+#### Code Explanation
+
+- **Initialization**:
+  - The ADC pins for the joystick axes (X and Y) are initialized.
+  - The GPIO pin for the joystick button is set up as an input with a pull-up resistor.
+- **Reading Joystick**:
+  - The `read_joystick` function reads the 16-bit values from the ADC pins for the X and Y axes.
+  - The `read_button` function checks the state of the button by reading the GPIO pin.
+- **Main Loop**:
+  - The main loop continuously reads the joystick and button states and prints them.
+  - It also includes a simple logic to print a message when the button is pressed.
+
+This experiment provides a basic demonstration of how to interface and use a PS2 joystick with a Raspberry Pi Pico 2W using MicroPython.
+
+
+![project13_diagram](./imgs/project13_04.png)
+
+----
+
+## Experiment 14: MPU6050 Gyroscope and Accelerometer Module
+
+#### Application Scenario
+
+This experiment demonstrates how to interface an MPU6050 sensor module with a Raspberry Pi Pico 2W. The MPU6050, which includes a 3-axis gyroscope and a 3-axis accelerometer, can be used for various applications such as motion detection, orientation sensing, and robotics.
+
+#### Working Principle
+
+The MPU6050 communicates with the Raspberry Pi Pico 2W via the I2C protocol. It provides 6-axis motion tracking by combining the data from the accelerometer and gyroscope, allowing for precise motion and orientation detection.
+
+#### Circuit Wiring
+
+Here's how to wire the MPU6050 to the Raspberry Pi Pico 2W:
+
+1. **VCC**: Connect to 3.3V on the Pico
+2. **GND**: Connect to a Ground pin on the Pico
+3. **SDA**: Connect to GPIO 16 (SDA pin on Pico)
+4. **SCL**: Connect to GPIO 17 (SCL pin on Pico)
+
+![project14_diagram](./imgs/project14_01.png)
+
+
+### Circuit Diagram
+
+```
+    MPU6050           Raspberry Pi Pico 2W
+    ------------------  -------------------------
+    VCC (Pin 18)       --> 3.3V
+    GND (Pin 19)       --> GND
+    SDA (Pin 21)       --> GPIO 16
+    SCL (Pin 22)       --> GPIO 17
 ```
 
-Clone the Pico SDK and examples repositories:
+![project14_diagram](./imgs/project14_02.png)
 
-```bash
-git clone https://github.com/raspberrypi/pico-sdk.git
-cd pico-sdk
-git submodule update --init
-cd ..
-git clone https://github.com/raspberrypi/pico-examples.git
+#### Demo Code
+* Step 1. upload the `mpu6050.py` library to Raspberry Pi Pico 2WH as following
+figures:
+
+Copy following codes into a new file and save it to `/lib` folder:
+
+* full code of `mpu6050.py` 
+
+```python
+import machine
+
+
+class accel():
+    def __init__(self, i2c, addr=0x68):
+        self.iic = i2c
+        self.addr = addr
+        #self.iic.start()
+        self.iic.writeto(self.addr, bytearray([107, 0]))
+        #self.iic.stop()
+
+    def get_raw_values(self):
+        #self.iic.start()
+        a = self.iic.readfrom_mem(self.addr, 0x3B, 14)
+        #self.iic.stop()
+        return a
+
+    def get_ints(self):
+        b = self.get_raw_values()
+        c = []
+        for i in b:
+            c.append(i)
+        return c
+
+    def bytes_toint(self, firstbyte, secondbyte):
+        if not firstbyte & 0x80:
+            return firstbyte << 8 | secondbyte
+        return - (((firstbyte ^ 255) << 8) | (secondbyte ^ 255) + 1)
+
+    def get_values(self):
+        raw_ints = self.get_raw_values()
+        vals = {}
+        vals["AcX"] = self.bytes_toint(raw_ints[0], raw_ints[1])
+        vals["AcY"] = self.bytes_toint(raw_ints[2], raw_ints[3])
+        vals["AcZ"] = self.bytes_toint(raw_ints[4], raw_ints[5])
+        vals["Tmp"] = self.bytes_toint(raw_ints[6], raw_ints[7]) / 340.00 + 36.53
+        vals["GyX"] = self.bytes_toint(raw_ints[8], raw_ints[9])
+        vals["GyY"] = self.bytes_toint(raw_ints[10], raw_ints[11])
+        vals["GyZ"] = self.bytes_toint(raw_ints[12], raw_ints[13])
+        return vals  # returned in range of Int16
+        # -32768 to 32767
+
+    def sleep(self):
+        self.iic.start()
+        self.iic.writeto_mem(self.addr, 0x6B, b'\x40')
+        self.iic.stop()
+        
+    def wakeup(self):
+        from time import sleep
+        self.iic.start()
+        self.iic.writeto_mem(self.addr, 0x6B, b'\x80')
+        self.iic.stop()
+        sleep(0.05)
+        self.iic.start()
+        self.iic.writeto_mem(self.addr, 0x68, b'\x07')
+        self.iic.stop()
+        sleep(0.05)
+        self.iic.start()
+        self.iic.writeto_mem(self.addr, 0x68, b'\x00')
+        self.iic.stop()
+        sleep(0.05)
+        self.iic.start()
+        self.iic.writeto_mem(self.addr, 0x6B, b'\x00')
+        self.iic.stop()
+
+    def val_test(self):  # ONLY FOR TESTING! Also, fast reading sometimes crashes IIC
+        from time import sleep
+        while 1:
+            print(self.get_values())
+            sleep(0.05)
 ```
 
-#### Step 4: Set Up Environment Variables
+![project14_diagram](./imgs/project14_03.png)
 
-Set the `PICO_SDK_PATH` environment variable to point to the SDK directory. This helps the build system locate the SDK. Add the following line to your `~/.bashrc` file to make it permanent:
+select `Raspberry Pi pico`:
 
-```bash
-echo 'export PICO_SDK_PATH=~/pico/pico-sdk' >> ~/.bashrc
-source ~/.bashrc
+![project14_diagram](./imgs/project14_04.png)
+
+Navigate to `lib` folder: 
+
+![project14_diagram](./imgs/project14_05.png)
+
+Save it as `mpu6050.py`, please make sure the name is `mpu6050.py`, otherwise
+    your main code may not work properly. 
+
+![project14_diagram](./imgs/project14_06.png)
+
+#### Demo code 
+
+* Open a new file and copy and paste following code:
+
+```python
+from machine import Pin, I2C
+from time import sleep
+from mpu6050 import accel
+import math
+
+
+imu_data = {}
+
+imu_i2c = I2C(0, scl=Pin(17), sda=Pin(16))
+
+imu = accel(imu_i2c)
+
+def get_mpu_data():
+    """get imu data from mpu6050"""
+    imu_data = imu.get_values()
+   
+    ax = imu_data['AcX'] 
+    ay = imu_data['AcY']  
+    az = imu_data['AcZ'] 
+    gx = imu_data['GyX']
+    gy = imu_data['GyY']
+    gz = imu_data['GyZ']
+    
+    return ax, ay, az, gx, gy, gz
+
+def calculate_roll_pitch(ax, ay, az):
+    """ calculate roll and pitch """
+    roll = math.atan2(ay, az) * 180.0 / math.pi
+    pitch = math.atan2(-ax, math.sqrt(ay * ay + az * az )) * 180.0 / math.pi
+    return roll, pitch
+
+
+def calculate_yaw(gx, gy, gz, dt):
+    """ calculate yaw angle """
+    global yaw
+    yaw += gz * dt
+    yaw = (yaw + 360) % 360
+    return yaw
+
+
+def main():
+    """main loop"""
+    global yaw
+    yaw = 0   # init yaw angle to 0 
+    dt = 0.05 # time interval in seconds
+    
+    while True:
+        ax, ay, az, gx, gy, gz = get_mpu_data()  # get data from mpu6050
+        roll, pitch = calculate_roll_pitch(ax, ay, az)
+        yaw = calculate_yaw(gx, gy, gz, dt)
+        
+        print(f"Roll: {roll:.2f}°, Pitch: {pitch:.2f}°, Yaw:{yaw:.2f}°")
+        sleep(dt)
+
+
+if __name__=="__main__":
+    main()  
+
+```
+Thonny IDE will be like:
+
+![project14_diagram](./imgs/project14_07.png)
+![project14_diagram](./imgs/project14_08.png)
+
+when the program running you will see the output like: 
+
+![project14_diagram](./imgs/project14_09.png)
+
+once you move the experiment platform, the data will be changed as following figure. 
+
+![project14_diagram](./imgs/project14_10.png)
+
+#### Code Explanation
+
+##### 1. Initialization
+```python
+import machine
+import math
+from time import sleep
+from mpu6050 import accel
+
+i2c = machine.I2C(0, scl=machine.Pin(1), sda=machine.Pin(0), freq=400000)
+mpu = accel(i2c)
+```
+- **`machine.I2C`**: Initializes the I2C interface to connect to the MPU6050 sensor.
+  - `scl` and `sda` are the clock and data lines of the I2C interface.
+  - `freq` is the I2C communication frequency, typically set to 400kHz.
+- **`accel(i2c)`**: Initializes the sensor using the MPU6050 library.
+
+##### 2. Data Acquisition
+
+```python
+def get_mpu_data():
+    data = mpu.get_values()
+    ax = data["AcX"]
+    ay = data["AcY"]
+    az = data["AcZ"]
+    gx = data["GyX"]
+    gy = data["GyY"]
+    gz = data["GyZ"]
+    return ax, ay, az, gx, gy, gz
+```
+- **`mpu.get_values()`**: Retrieves the raw acceleration and gyroscope data from the MPU6050.
+  - `AcX`, `AcY`, `AcZ` are the acceleration data for the X, Y, and Z axes.
+  - `GyX`, `GyY`, `GyZ` are the gyroscope data for the X, Y, and Z axes.
+- These values are 16-bit integers, with units of `mg` (acceleration) and `°/s` (gyroscope).
+
+##### 3. Calculating Roll and Pitch
+
+```python
+def calculate_roll_pitch(ax, ay, az):
+    roll = math.atan2(ay, az) * 180.0 / math.pi
+    pitch = math.atan2(-ax, math.sqrt(ay * ay + az * az)) * 180.0 / math.pi
+    return roll, pitch
+```
+- **`math.atan2(y, z)`**: Calculates the arctangent value, returning the angle in radians.
+  - The roll (bank angle) formula is `atan2(ay, az)`, representing the rotation around the X-axis.
+  - The pitch (tilt angle) formula is `atan2(-ax, sqrt(ay * ay + az * az))`, representing the rotation around the Y-axis.
+- **`* 180.0 / math.pi`**: Converts the angle from radians to degrees.
+
+##### 4. Calculating Yaw
+
+```python
+def calculate_yaw(gx, gy, gz, dt):
+    global yaw
+    yaw += gz * dt
+    yaw = (yaw + 360) % 360
+    return yaw
+```
+- **`yaw += gz * dt`**: Calculates the yaw angle by integrating the Z-axis gyroscope data.
+  - `gz` is the angular velocity of the Z-axis (unit: °/s), and `dt` is the time interval (unit: seconds).
+- **`(yaw + 360) % 360`**: Ensures that the yaw angle remains within the range of 0 to 360 degrees.
+
+##### 5. Main Loop
+
+```python
+def main():
+    global yaw
+    yaw = 0
+    dt = 0.05
+
+    while True:
+        ax, ay, az, gx, gy, gz = get_mpu_data()
+        roll, pitch = calculate_roll_pitch(ax, ay, az)
+        yaw = calculate_yaw(gx, gy, gz, dt)
+
+        print(f"Roll: {roll:.2f}°, Pitch: {pitch:.2f}°, Yaw: {yaw:.2f}°")
+        sleep(dt)
+```
+- **`global yaw`**: Declares `yaw` as a global variable to share it between functions.
+- **`dt`**: The time interval, which affects the sampling frequency.
+- In the main loop:
+  - Retrieves the acceleration and gyroscope data from the MPU6050.
+  - Calculates the roll, pitch, and yaw angles.
+  - Prints the results and waits for the next sampling interval.
+
+##### Notes
+
+1. **Sensor Calibration**: The MPU6050 should be calibrated before use to eliminate bias errors.
+2. **Integration Drift**: The yaw angle is calculated by integration and is prone to drift. In practical applications, it may be necessary to combine it with other sensors (such as a magnetometer) for correction.
+3. **Sampling Frequency**: The value of `dt` affects the calculation accuracy and response speed. It can be adjusted according to actual needs.
+
+----
+
+## Experiment 15: Raindrop module
+
+#### Application Scenario
+
+The raindrop sensor can be used to detect the presence of raindrops or water. It is commonly used in weather stations, automated irrigation systems, and other applications where water detection is necessary.
+
+#### Working Principle
+
+The raindrop sensor typically consists of a pair of conductive surfaces that are exposed to the environment. When a raindrop falls onto these surfaces, it closes the circuit, allowing current to flow. This change in current can be detected by a microcontroller, such as the Raspberry Pi Pico, to indicate the presence of rain.
+
+#### Circuit Wiring
+
+To connect the raindrop sensor to the Raspberry Pi Pico, follow these steps:
+
+1. Connect the VCC pin of the raindrop sensor to a 3.3V power supply on the Raspberry Pi Pico.
+2. Connect the GND pin of the raindrop sensor to one of the ground (GND) pins on the Raspberry Pi Pico.
+3. Connect the OUT pin of the raindrop sensor to a GPIO pin on the Raspberry Pi Pico that supports digital input.
+
+![project15_diagram](./imgs/project15_01.png)
+
+Here is an example wiring diagram:
+
+```
+Raindrop Sensor        Raspberry Pi Pico
+    VCC ----> 3.3V
+    GND ----> GND
+    OUT ----> GPIO 0
 ```
 
-#### Step 5: Build the Pico Examples
+![project15_diagram](./imgs/project15_02.png)
 
-Navigate to the examples directory and create a build directory:
+#### Demo Code
 
-```bash
-cd ~/pico/pico-examples
-mkdir build
-cd build
+```python
+from machine import Pin
+import time
+
+# Define the GPIO pin connected to the raindrop sensor's OUT pin
+sensor_pin = Pin(0, Pin.IN)
+
+def check_rain():
+    # Check if the raindrop sensor is triggered (i.e., the pin is low)
+    if sensor_pin.value() == 0:
+        print("Rain detected!")
+    else:
+        print("No rain detected.")
+
+# Main loop
+while True:
+    check_rain()
+    time.sleep(1)  # Wait for 1 second before checking again
 ```
 
-Configure the build system using CMake, specifying the Pico 2W board:
+In Thonny IDE will be like: 
 
-```bash
-cmake -DPICO_BOARD=pico_w ..
-```
+![project15_diagram](./imgs/project15_03.png)
 
-Build the examples:
+#### Code Explanation
 
-```bash
-make
-```
+- **Import Libraries**: The `Pin` class from `machine` module is imported to interact with GPIO pins, and `time` module is imported to add delays.
+- **Define GPIO Pin**: A `Pin` object is created for the GPIO pin connected to the OUT pin of the raindrop sensor. The pin is configured as an input (`Pin.IN`).
+- **check_rain Function**: This function checks the state of the raindrop sensor. If the pin is low (indicating rain), it prints "Rain detected!". Otherwise, it prints "No rain detected."
+- **Main Loop**: The `while True` loop continuously checks for rain every second using the `check_rain` function. The `time.sleep(1)` function call pauses the program for 1 second between checks.
 
-#### Step 6: Flash an Example to the Pico 2W
+This setup allows the Raspberry Pi Pico to monitor the raindrop sensor and print a message whenever rain is detected.
 
-To flash an example project (e.g., the blink example) to the Pico 2W, follow these steps:
+#### Testing Result 
 
-1. **Prepare the Pico 2W for Flashing**:
-   - Hold the **BOOTSEL** button on the Pico 2W while connecting it to the Raspberry Pi via USB. The Pico 2W should appear as a USB mass storage device named `RPI-RP2`.
-   - Release the **BOOTSEL** button once the Pico 2W is recognized.
+when you drop a water on the sensor board will be like: 
 
-2. **Copy the UF2 File to the Pico 2W**:
-   - Navigate to the example project directory and build it:
-     ```bash
-     cd ~/pico/pico-examples/build/pico_w/blink
-     make
-     ```
-   - Copy the generated `.uf2` file to the Pico 2W storage device:
-     ```bash
-     cp blink.uf2 /media/pi/RPI-RP2/
-     ```
-   - The Pico 2W will automatically reboot and run the example.
 
-#### Step 7: Create and Build Your Own Project
+![project15_diagram](./imgs/project15_05.png)
 
-To create your own project, follow these steps:
+and the monitor on thonny IDE's output will be like:
 
-1. **Create a New Project Directory**:
 
-   ```bash
-   mkdir ~/pico/my_project
-   cd ~/pico/my_project
-   ```
+![project15_diagram](./imgs/project15_04.png)
 
-2. **Initialize the Project**:
-   - Create a `CMakeLists.txt` file to configure the build system. Here’s a basic example:
-     ```cmake
-     cmake_minimum_required(VERSION 3.13.1)
-     include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
-     project(my_project)
-
-     pico_sdk_init()
-
-     add_executable(my_project main.c)
-     pico_add_extra_outputs(my_project)
-     ```
-
-   - Create a `main.c` file with your code. For example:
-     ```c
-     #include "pico/stdlib.h"
-
-     int main() {
-         stdio_init_all();
-         while (true) {
-             printf("Hello, Pico 2W!\n");
-             sleep_ms(1000);
-         }
-     }
-     ```
-
-3. **Build the Project**:
-   - Create a build directory and configure the project:
-     ```bash
-     mkdir build
-     cd build
-     cmake -DPICO_BOARD=pico_w ..
-     make
-     ```
-
-4. **Flash the Project to the Pico 2W**:
-   - Follow the same steps as in Step 6 to flash the `.uf2` file to the Pico 2W.
-
-### Experiment in C/C++ 
-
-* [Project 1](./project1.md)
-* [Project 2](./project2.md)
-* [Project 3](./project3.md)
-* [Project 4](./project4.md)
-* [Project 5](./project5.md)
-* [Project 6](./project6.md)
-* [Project 7](./project7.md)
-* [Project 8](./project8.md)
-* [Project 9](./project9.md)
-* [Project 10](./project10.md)
-* [Project 11](./project11.md)
-* [Project 12](./project12.md)
-
-### Conclusion
-By following these steps, you should have a fully functional Pico-SDK environment on your Raspberry Pi, ready for developing applications for the Raspberry Pi Pico 2W. You can now proceed to write your own code, build projects, and flash them to the Pico 2W using the terminal and command-line tools.
-
+----
 
 [11]: http://docs.52pi.com/md/kz-0084/projects/#experiment-1-blinking-a-led
 [12]: http://docs.52pi.com/md/kz-0084/projects/#experiment-2-reading-a-flame-sensor 
@@ -1992,6 +2294,9 @@ By following these steps, you should have a fully functional Pico-SDK environmen
 [20]: http://docs.52pi.com/md/kz-0084/projects/#experiment-10-using-a-rotary-encoder
 [21]: http://docs.52pi.com/md/kz-0084/projects/#experiment-11-1.3inch-IPS_LCD-display 
 [22]: http://docs.52pi.com/md/kz-0084/projects/#experiment-12-1.3inch-IPS_LCD-Imagebox
+[23]: http://docs.52pi.com/md/kz-0084/projects/#experiment-13-using-ps2-joystick
+[24]: http://docs.52pi.com/md/kz-0084/projects/#experiment-14-mpu6050-gyroscope-and-accelerometer-module
+[25]: http://docs.52pi.com/md/kz-0084/projects/#experiment-15-raindrop-module
 
 ### Conclusion
 
@@ -2001,5 +2306,66 @@ Happy experimenting!
 ### Support
 
 If you encounter any issues or have questions while using the kit, please refer to the instruction manual or contact our support team for assistance. We are here to help you on your journey into the exciting world of electronics and programming!
-
 Happy experimenting with your Raspberry Pi Pico 2 WH Starter Kit!
+
+## Development in C/C++ Environment
+
+The Raspberry Pi Pico series of development boards also supports the C/C++ programming environment. Although programming in C/C++ may increase the difficulty, it is more hardware-friendly at the lower level. The firmware developed is in the \*.uf2 format, which is more convenient for distribution and sharing.
+
+The advantages of the \*.uf2 format for firmware include the following:
+
+1. **Ease of Use and Distribution**:
+   - The UF2 format is designed to be user-friendly, allowing firmware updates to be performed through simple drag-and-drop operations. This makes it accessible even to non-technical users.
+   - It appears as a mass storage device (USB drive) when connected to a computer, enabling easy file transfer without the need for complex tools.
+
+2. **Robustness and Reliability**:
+   - Each UF2 file consists of independent 512-byte blocks, which ensures that the microcontroller can receive complete blocks even if the file is transferred partially. This design improves the reliability of firmware updates.
+   - The format includes magic numbers at the beginning and end of each block, which help the microcontroller identify and validate the UF2 blocks, reducing the risk of errors during the flashing process.
+
+3. **Compatibility and Flexibility**:
+   - UF2 supports a wide range of microcontrollers and development boards, including the Raspberry Pi Pico. It also includes a family ID mechanism to ensure that firmware is compatible with the specific hardware it is intended for.
+   - The format allows for additional features such as embedding source code or debug information within the UF2 file, which can be useful for development and debugging purposes.
+
+4. **Efficiency**:
+   - The fixed block size and structure of UF2 files make the flashing process efficient and straightforward. The bootloader can quickly detect and process the blocks, reducing the time required for firmware updates.
+
+Overall, the UF2 format simplifies the firmware update process, making it more reliable, user-friendly, and compatible with various hardware platforms.
+
+The official documentation uses VSCode with plugins to set up the environment. From our tests, deploying this environment on a Linux system is very convenient and interesting. Now, let's set up a Pico SDK development environment on a Raspberry Pi running Linux and build a circuit to demonstrate a basic application for you!The official documentation uses VSCode with plugins to set up the environment. From our tests, deploying this environment on a Linux system is very convenient and interesting. Now, let's set up a Pico SDK development environment on a Raspberry Pi running Linux and build a circuit to demonstrate a basic application for you!
+
+## Download and install pico-sdk 
+
+* Make sure your Raspberry Pi can access internet. 
+* Open a terminal and typing following commands:
+
+```bash
+sudo apt update 
+sudo apt upgrade -y 
+sudo apt -y install wget git vim-*
+```
+
+and then:
+
+```bash
+cd ~
+wget
+https://raw.githubusercontent.com/raspberrypi/pico-setup/refs/heads/master/pico_setup.sh 
+chmod +x pico_setup.sh 
+./pico_setup.sh 
+```
+
+* looks like following figures:
+
+![pico-sdk-install](./imgs/pico-sdk-install-01.png)
+   
+![pico-sdk-install](./imgs/pico-sdk-install-02.png)
+
+![pico-sdk-install](./imgs/pico-sdk-install-03.png)
+
+![pico-sdk-install](./imgs/pico-sdk-install-04.png)
+
+* Reboot Raspberry Pi after the installation has been finished.
+
+## Getting Start manually 
+
+* [Getting Start Step by step](./projectsinc.md)
