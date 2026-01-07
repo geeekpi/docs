@@ -20,8 +20,10 @@ The **RGB LED Matrix Nano R4 Kit** is a versatile and visually stunning developm
 
 ### Wiring
 
-* Default wiring:
+> You don't have to wiring anything, just plug the Arduino Nano R4 board to the
+> RGB LED matrix on GPIO pin header will be ok. 
 
+* Default wiring:
 1. Connect the **VCC** pin of the RGB LED Matrix to the **5V** pin on the Arduino Nano R4.
 2. Connect the **GND** pin of the RGB LED Matrix to the **GND** pin on the Arduino Nano R4.
 3. Connect the **DIN** pin of the RGB LED Matrix to the **D11** pin on the Arduino Nano R4.
