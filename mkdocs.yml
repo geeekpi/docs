@@ -1,18 +1,18 @@
 site_name: 52Pi Docs 
 nav:
   - HOME: 'index.md'
-  - EP-0263:
-    - RGB LED Matrix Shield for Arduino NANO R4/ESP32: 'md/ep-0263/ep-0263.md'
-  - EP-0262:
-    - Terminal Expansion Base for Arduino NANO ESP32 : 'md/ep-0262/ep-0262.md'
-  - EP-0257:
-    - Level-Shift Shield for Arduino UNO Q: 'md/ep-0257/ep-0257.md'
-  - KZ-0087:
-    - RGB LED Matrix Nano R4 Kit: 'md/kz-0087/RGBLED-matrix-kit.md'
-  - KZ-0086:
-    - DIY Beginner Kit Compatible with Arduino Nano R4(Headers): 'md/kz-0086/diykitforarduinonanor4.md' 
-  - KZ-0083:
-    - Raspberry Pi Pico 2 WH Starter Kit: 'md/kz-0083/getting-start.md' 
+  - Arduino Series:
+    - KZ-0091 EmbodiQ AI Control Kit For Arduino UNO Q: 'md/ArduinoUNOQ/KZ-0091/kz-0091.md' 
+    - KZ-0092 5V GPIO Starter Kit for Arduino UNO Q: 'md/ArduinoUNOQ/KZ-0092/kz-0092.md' 
+    - EP-0263 RGB LED Matrix Shield for Arduino NANO R4/ESP32: 'md/ep-0263/ep-0263.md'
+    - EP-0262 Terminal Expansion Base for Arduino NANO ESP32 : 'md/ep-0262/ep-0262.md'
+    - EP-0257 Level-Shift Shield for Arduino UNO Q: 'md/ep-0257/ep-0257.md'
+    - KZ-0087 RGB LED Matrix Nano R4 Kit: 'md/kz-0087/RGBLED-matrix-kit.md'
+    - KZ-0086 DIY Beginner Kit Compatible with Arduino Nano R4(Headers): 'md/kz-0086/diykitforarduinonanor4.md' 
+    - KZ-0054 Cloud Ready Starter Kit for Arduino UNO R4 WiFi: 'md/kz-0054/whatinkit.md'
+
+  - Raspberry Pi Series: 
+    - KZ-0083 Raspberry Pi Pico 2 WH Starter Kit: 'md/kz-0083/getting-start.md' 
     - Project 1: 'md/kz-0083/project1.md'
     - Project 2: 'md/kz-0083/project2.md'
     - Project 3: 'md/kz-0083/project3.md'
@@ -23,11 +23,7 @@ nav:
     - Project 8: 'md/kz-0083/project8.md'
     - Project 9: 'md/kz-0083/project9.md'
 
-  - KZ-0084:
-    - Ultimate Starter Kit for Raspberry Pi Pico 2 WH: 'md/kz-0084/projects.md'
-
-  - KZ-0054:
-    - Cloud Ready Starter Kit for Arduino UNO R4 WiFi: 'md/kz-0054/whatinkit.md'
+    - KZ-0084 Ultimate Starter Kit for Raspberry Pi Pico 2 WH: 'md/kz-0084/projects.md'
 
   - KZ-0069:
     - Plant Watering Kit: 'md/kz-0069/package_includes.md'
