@@ -2,6 +2,7 @@ site_name: 52Pi Docs
 nav:
   - HOME: 'index.md'
   - Arduino Series:
+    - KZ-0091 EmbodiQ AI Control Kit For Arduino UNO Q: 'md/ArduinoUNOQ/KZ-0091/kz-0091.md' 
     - KZ-0092 5V GPIO Starter Kit for Arduino UNO Q: 'md/kz-0092/kz-0092.md'
     - EP-0263 RGB LED Matrix Shield for Arduino NANO R4/ESP32: 'md/ep-0263/ep-0263.md'
     - EP-0262 Terminal Expansion Base for Arduino NANO ESP32 : 'md/ep-0262/ep-0262.md'
